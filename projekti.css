@@ -1,0 +1,59 @@
+.border{
+	border-bottom: solid 1px #5C606C;
+	margin-left: 1em;
+	margin-right: 1em;
+	margin-bottom: 2em;
+}
+nav ul li{
+	list-style: none;
+	display: inline;
+
+
+}
+nav#mainMenu{
+	background-color: #1F2531;
+	text-align: right;
+	padding: 2em;
+	font-family: Times-New-Roman;
+	font-size: 0.75em;
+	margin-right: 1em;
+
+}
+nav{
+	padding: 12px;
+	
+}
+nav a{
+	padding: 0.75em;
+	text-transform: uppercase;
+}
+a:link{
+	color:#616767;
+	text-decoration: none;
+	display: inline;
+
+}
+a:visited{
+	color: #FCFFFF;
+}
+a:hover{
+	color: #FCFFFF;
+	border-top:solid 3px #B86366;
+}
+.active{
+	color: #FCFFFF;
+}
+.smart{
+	background-color: #B86366;
+	padding: 3em 1.5em;
+	margin-left: 1em ;
+	border-radius: 0 0 1em 1em;
+	float: left;
+	border-width: 100%
+
+}
+
+body{
+	background-color: #1F2531;
+	color: #FFFEFF;
+}
