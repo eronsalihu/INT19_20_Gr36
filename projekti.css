@@ -52,7 +52,47 @@ a:hover{
 	border-width: 100%
 
 }
+.foto{
+	float: right;
+	margin-right: 1em;
+}
+p.aaa{
+	font-size: 4em;
+	padding-top: 2.7em;
+	padding-left: 12px;
+}
+p.bbb{
+	padding-left: 1em;
+	font-family: Times-New-Roman
+}
+div.ddd{
+	background-color: #10131C;
+	margin-left: 1em;
+	text-transform: uppercase;
+	margin-top: 1em;
+	padding: 1em;
+	padding-left: 2em;
+	float: left;
+	font-size: 1em;
+	border-radius: 9px;
+	letter-spacing: 2px;
+}
+.abc{
 
+	background:url(../Internet/phoneicon.png) no-repeat;
+	background-position: 4px 4px;
+	
+}
+.middle{
+	background-color: #ffffff;
+	margin-top: 12em;
+	margin-right: 1em;
+	margin-left: 1em;
+	border-radius: 1.5em;
+}
+.middle1{
+	background-color: #B86366;
+}
 body{
 	background-color: #1F2531;
 	color: #FFFEFF;
