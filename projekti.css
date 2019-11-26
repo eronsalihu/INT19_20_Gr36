@@ -83,15 +83,72 @@ div.ddd{
 	background-position: 4px 4px;
 	
 }
-.middle{
+.outterdiv{
 	background-color: #ffffff;
 	margin-top: 12em;
 	margin-right: 1em;
 	margin-left: 1em;
 	border-radius: 1.5em;
+	padding: 1em;
+	height: 30em;
+
 }
-.middle1{
+.innerdiv1{
 	background-color: #B86366;
+	color: white;
+	float: left;
+	border-radius:50%;
+	padding: 2em;
+	border: solid 1em #E3E2E0;
+	margin-right: 1em;
+	margin-top: 1em;
+	height: 100px;
+	width: 100px;
+	text-align: center;
+
+}
+.innerdiv2{
+	background-color: #B86366;
+	color: white;
+	float: left;
+	border-radius: 180px;
+	padding: 2em;
+	border: solid 1em #E3E2E0;
+	margin-top: 1em;
+	height: 100px;
+	width: 100px;
+	text-align: center;
+
+}
+.innerdiv3{
+	background-color: #B86366;
+	color: white;
+	float: left;
+	border-radius: 180px;
+	padding: 2em;
+	border: solid 1em #E3E2E0;
+	margin-top: 1em;
+	height: 100px;
+	width: 100px;
+	margin-right: 1em;
+	text-align: center;
+
+
+}
+.innerdiv4{
+	background-color: #B86366;
+	color: white;
+	float:left;
+	border-radius: 180px;
+	padding: 2em;
+	border: solid 1em #E3E2E0;
+	margin-top: 1em;
+	height: 100px;
+	width: 100px;
+	text-align: center;
+}
+.innerdivv{
+	clear: both;
 }
 body{
 	background-color: #1F2531;
