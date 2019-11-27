@@ -20,11 +20,13 @@ nav#mainMenu{
 
 }
 nav{
-	padding: 12px;
+	
+	color:#616767;
+
 	
 }
 nav a{
-	padding: 0.75em;
+	padding: 1em;
 	text-transform: uppercase;
 }
 a:link{
@@ -90,7 +92,7 @@ div.ddd{
 	margin-left: 1em;
 	border-radius: 1.5em;
 	padding: 1em;
-	height: 30em;
+	height: 50em;
 
 }
 .innerdiv1{
@@ -98,57 +100,106 @@ div.ddd{
 	color: white;
 	float: left;
 	border-radius:50%;
-	padding: 2em;
-	border: solid 1em #E3E2E0;
+	padding: 1.5em;
+	border: solid 0.75em #E3E2E0;
 	margin-right: 1em;
 	margin-top: 1em;
-	height: 100px;
-	width: 100px;
+	height: 150px;
+	width: 150px;
 	text-align: center;
+	font-size: 32px;
 
 }
 .innerdiv2{
 	background-color: #B86366;
 	color: white;
 	float: left;
-	border-radius: 180px;
-	padding: 2em;
-	border: solid 1em #E3E2E0;
+	border-radius:50%;
+	padding: 1.5em;
+	border: solid 0.75em #E3E2E0;
+	margin-right: 1em;
 	margin-top: 1em;
-	height: 100px;
-	width: 100px;
+	height: 150px;
+	width: 150px;
 	text-align: center;
+	font-size: 32px;
+
 
 }
 .innerdiv3{
 	background-color: #B86366;
 	color: white;
 	float: left;
-	border-radius: 180px;
-	padding: 2em;
-	border: solid 1em #E3E2E0;
-	margin-top: 1em;
-	height: 100px;
-	width: 100px;
+	border-radius:50%;
+	padding: 1.5em;
+	border: solid 0.75em #E3E2E0;
 	margin-right: 1em;
+	margin-top: 1em;
+	height: 150px;
+	width: 150px;
 	text-align: center;
-
+	font-size: 32px;
 
 }
 .innerdiv4{
 	background-color: #B86366;
 	color: white;
-	float:left;
-	border-radius: 180px;
-	padding: 2em;
-	border: solid 1em #E3E2E0;
+	float: left;
+	border-radius:50%;
+	padding: 1.5em;
+	border: solid 0.75em #E3E2E0;
+	margin-right: 1em;
 	margin-top: 1em;
-	height: 100px;
-	width: 100px;
+	height: 150px;
+	width: 150px;
 	text-align: center;
+	font-size: 32px;
+
 }
 .innerdivv{
 	clear: both;
+}
+.qqq{
+	float: right;
+	color: black;
+	font-size: 32px;
+	font-style: italic;
+	margin-right: 1em;
+	margin-left: 1em;
+	margin-top: 1em;
+}
+.qqq1{
+	margin-top: 1em;
+	font-size: 32px;
+	float: right;
+	color: black;
+	
+	font-style: italic;
+}
+.qqq2{
+	margin-right: 1em;
+	float: right;
+	color: black;
+	font-size: 32px;
+	font-style: italic;
+}
+.qqq3{
+	margin-right: 1em;
+	float: right;
+	color: black;
+	font-size: 32px;
+	font-style: italic;
+}
+.eee{
+	color: #686868;
+	clear: both;
+	padding: 5em;
+
+}
+p#qwe{
+	font-style: italic;
+	font-weight: bold;
+	text-transform: uppercase;
 }
 body{
 	background-color: #1F2531;
