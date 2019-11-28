@@ -3,27 +3,28 @@
 	margin-left: 1em;
 	margin-right: 1em;
 	margin-bottom: 2em;
+  padding-bottom: 1.2em;
 }
 nav ul li{
 	list-style: none;
 	display: inline;
-
+  padding: 0.7em;
 
 }
 nav#mainMenu{
 	background-color: #1F2531;
 	text-align: right;
-	padding: 2em;
+	padding: 2.3em;
 	font-family: Times-New-Roman;
-	font-size: 0.75em;
+	font-size: 1em;
 	margin-right: 1em;
 
 }
 nav{
-	
+
 	color:#616767;
 
-	
+
 }
 nav a{
 	padding: 1em;
@@ -41,18 +42,30 @@ a:visited{
 a:hover{
 	color: #FCFFFF;
 	border-top:solid 3px #B86366;
+
 }
-.active{
+
+ .active{
 	color: #FCFFFF;
+
 }
-.smart{
+.smarti_free{
 	background-color: #B86366;
-	padding: 3em 1.5em;
+	padding: 3.3em 2.1em;
 	margin-left: 1em ;
 	border-radius: 0 0 1em 1em;
 	float: left;
 	border-width: 100%
 
+}
+.smart{
+  font-size: 2.2em;
+  padding-bottom:0.6em;
+}
+.Free_Psd{
+  font-size: 0.8em;
+  padding-left: 1.5em;
+  color: #EACDCC;
 }
 .foto{
 	float: right;
@@ -83,7 +96,7 @@ div.ddd{
 
 	background:url(../Internet/phoneicon.png) no-repeat;
 	background-position: 4px 4px;
-	
+
 }
 .outterdiv{
 	background-color: #ffffff;
@@ -173,7 +186,7 @@ div.ddd{
 	font-size: 32px;
 	float: right;
 	color: black;
-	
+
 	font-style: italic;
 }
 .qqq2{
@@ -189,6 +202,9 @@ div.ddd{
 	color: black;
 	font-size: 32px;
 	font-style: italic;
+}
+.Osi{
+  color: #88596B;
 }
 .eee{
 	color: #686868;
