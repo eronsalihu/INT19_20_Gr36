@@ -1,3 +1,4 @@
+
 .border{
 	border-bottom: solid 1px #5C606C;
 	margin-left: 1em;
@@ -105,7 +106,7 @@ div.ddd{
 	margin-left: 1em;
 	border-radius: 1.5em;
 	padding: 1em;
-	height: 50em;
+	height: 54em;
 
 }
 .innerdiv1{
@@ -186,7 +187,6 @@ div.ddd{
 	font-size: 32px;
 	float: right;
 	color: black;
-
 	font-style: italic;
 }
 .qqq2{
@@ -220,4 +220,48 @@ p#qwe{
 body{
 	background-color: #1F2531;
 	color: #FFFEFF;
+}
+.footer-panel{
+	width:22%;
+	display: inline-block;
+	vertical-align: top;
+	padding-left:20px;
+}
+.footer-content{
+	color:grey;
+}
+.footer-title{
+	margin-bottom:15px;
+}
+.footer-content li{
+	list-style-type:none;
+	border-bottom: 1px solid grey;
+	padding:5px 0px;
+	font-size:20px;
+}
+.footer li a{
+	color:grey !important;
+}
+.socials li {
+	padding:20px 0px !important;
+}
+footer
+{
+	margin:40px 0px 20px 0px !important;
+	padding:0 20px;
+}
+p.sub {
+	padding-left: 2em;
+	font-size: 3em;
+	font-style: italic;
+}
+p.miss{
+	padding-left: 2.3em;
+	font-size: 1.3em;
+}
+.footer-bottom
+{
+	margin-top:25px;
+	border-top:1px solid grey;
+	padding-top:15px;
 }
