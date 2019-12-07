@@ -203,13 +203,34 @@ div.ddd{
 	font-size: 32px;
 	font-style: italic;
 }
+.zi{
+	border:solid  1px;
+	background-color: black;
+color: #FDFDFD;
+font-size: 18px;
+padding-top:10px;
+padding-bottom: 10px;
+}
+h1#benefi{
+	padding-bottom: .5em;
+	font-size: 0.8em;
+	color: #929292;
+}
+p#shkronja{
+	color:#ABABAB;
+	font-size: 0.8em;
+}
 .Osi{
   color: #88596B;
 }
 .eee{
+border-top: solid 2px #ABABAB;
 	color: #686868;
 	clear: both;
-	padding: 5em;
+	margin-top: 2em;
+padding: 2em;
+
+	border-bottom: solid 2px #ABABAB;
 
 }
 p#qwe{
