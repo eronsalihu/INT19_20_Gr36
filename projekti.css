@@ -229,7 +229,6 @@ border-top: solid 2px #ABABAB;
 	clear: both;
 	margin-top: 2em;
 padding: 2em;
-
 	border-bottom: solid 2px #ABABAB;
 
 }
@@ -237,6 +236,15 @@ p#qwe{
 	font-style: italic;
 	font-weight: bold;
 	text-transform: uppercase;
+}
+.format{
+float: right;
+padding-right:5em;
+}
+.emaili{
+	font-size: 1em;
+	border: solid 1px #ABABAB;
+	padding: 0.3em;
 }
 body{
 	background-color: #1F2531;
