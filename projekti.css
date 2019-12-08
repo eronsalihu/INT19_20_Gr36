@@ -1,29 +1,31 @@
+
 .border{
 	border-bottom: solid 1px #5C606C;
 	margin-left: 1em;
 	margin-right: 1em;
 	margin-bottom: 2em;
+  padding-bottom: 1.2em;
 }
 nav ul li{
 	list-style: none;
 	display: inline;
-
+  padding: 0.7em;
 
 }
 nav#mainMenu{
 	background-color: #1F2531;
 	text-align: right;
-	padding: 2em;
+	padding: 2.3em;
 	font-family: Times-New-Roman;
-	font-size: 0.75em;
+	font-size: 1em;
 	margin-right: 1em;
 
 }
 nav{
-	
+
 	color:#616767;
 
-	
+
 }
 nav a{
 	padding: 1em;
@@ -41,18 +43,30 @@ a:visited{
 a:hover{
 	color: #FCFFFF;
 	border-top:solid 3px #B86366;
+
 }
-.active{
+
+ .active{
 	color: #FCFFFF;
+
 }
-.smart{
+.smarti_free{
 	background-color: #B86366;
-	padding: 3em 1.5em;
+	padding: 3.3em 2.1em;
 	margin-left: 1em ;
 	border-radius: 0 0 1em 1em;
 	float: left;
 	border-width: 100%
 
+}
+.smart{
+  font-size: 2.2em;
+  padding-bottom:0.6em;
+}
+.Free_Psd{
+  font-size: 0.8em;
+  padding-left: 1.5em;
+  color: #EACDCC;
 }
 .foto{
 	float: right;
@@ -83,7 +97,7 @@ div.ddd{
 
 	background:url(../Internet/phoneicon.png) no-repeat;
 	background-position: 4px 4px;
-	
+
 }
 .outterdiv{
 	background-color: #ffffff;
@@ -92,7 +106,7 @@ div.ddd{
 	margin-left: 1em;
 	border-radius: 1.5em;
 	padding: 1em;
-	height: 50em;
+	height: 54em;
 
 }
 .innerdiv1{
@@ -154,7 +168,6 @@ div.ddd{
 	width: 150px;
 	text-align: center;
 	font-size: 32px;
-
 }
 .innerdivv{
 	clear: both;
@@ -173,7 +186,6 @@ div.ddd{
 	font-size: 32px;
 	float: right;
 	color: black;
-	
 	font-style: italic;
 }
 .qqq2{
@@ -190,10 +202,35 @@ div.ddd{
 	font-size: 32px;
 	font-style: italic;
 }
+.zi{
+	border:solid  1px;
+	background-color: #3A3A3A;
+	color: #FDFDFD;
+	font-size: 18px;
+	padding-top:10px;
+	padding-bottom: 10px;
+}
+h1#benefi{
+	padding-bottom: .5em;
+	font-size: 0.8em;
+	color: #8D8D8D;
+}
+p#shkronja{
+	color:#969696;
+	font-size: 0.8em;
+}
+.Osi{
+  color: #88596B;
+}
+
 .eee{
+	border-top: solid 2px #ABABAB;
 	color: #686868;
 	clear: both;
-	padding: 5em;
+	margin-top: 2em;
+	padding: 2em;
+	border-bottom: solid 2px #ABABAB;
+	height: 5em;
 
 }
 p#qwe{
@@ -201,7 +238,81 @@ p#qwe{
 	font-weight: bold;
 	text-transform: uppercase;
 }
+div#sub{
+	float: left;
+}
+div#email{
+	float: right;
+	padding-top: 1em;
+
+}
+
+p.sub {
+	padding-left: 2em;
+	font-size: 3em;
+	font-style: italic;
+	font-weight: bold;
+}
+p.miss{
+	padding-left: 2.3em;
+	font-size: 1.3em;
+}
+
+.emaili{
+	font-size: 1.2em;
+	border: solid 1px #ABABAB;
+	padding: 0.5em;
+	background-color: #dddddd;
+	border-radius: 5px;
+	width: 20em;
+}
+.signupi{
+	background-color: #dddddd;
+	color: #B86366;
+	width: 8em;
+	height: 3.2em;
+	border-radius: 5px;
+	margin-left: 1em;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-family: Times-New-Roman;
+}
 body{
 	background-color: #1F2531;
 	color: #FFFEFF;
+}
+.footer-panel{
+	width:22%;
+	display: inline-block;
+	vertical-align: top;
+	padding-left:20px;
+}
+.footer-content{
+	color:grey;
+}
+.footer-title{
+	margin-bottom:15px;
+}
+.footer-content li{
+	list-style-type:none;
+	border-bottom: 1px solid grey;
+	padding:5px 0px;
+	font-size:20px;
+}
+.footer li a{
+	color:grey !important;
+}
+.socials li {
+	padding:20px 0px !important;
+}
+footer
+{
+	margin:40px 0px 20px 0px !important;
+	padding:0 20px;
+}
+.footer-bottom
+{
+	margin-top:25px;
+	border-top:1px solid grey;
+	padding-top:15px;
 }
