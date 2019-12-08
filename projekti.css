@@ -231,6 +231,7 @@ p#shkronja{
 	padding: 2em;
 	border-bottom: solid 2px #ABABAB;
 	height: 5em;
+	
 
 }
 p#qwe{
@@ -275,7 +276,7 @@ p.miss{
 	margin-left: 1em;
 	text-transform: uppercase;
 	font-weight: bold;
-	font-family: Times-New-Roman;
+	font-family:Times-New-Roman
 }
 body{
 	background-color: #1F2531;
