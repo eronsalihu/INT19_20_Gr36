@@ -231,7 +231,7 @@ p#shkronja{
 	padding: 2em;
 	border-bottom: solid 2px #ABABAB;
 	height: 5em;
-	
+
 
 }
 p#qwe{
@@ -316,4 +316,13 @@ footer
 	margin-top:25px;
 	border-top:1px solid grey;
 	padding-top:15px;
+}
+p#read{
+	float: right;
+	color:#AB757D;
+}
+span#shigjeta{
+	font-size: 0.5em;
+	align:center;
+	padding-left: 0.2em;
 }
