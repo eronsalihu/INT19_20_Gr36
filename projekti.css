@@ -43,6 +43,7 @@ a:visited{
 a:hover{
 	color: #FCFFFF;
 	border-top:solid 3px #B86366;
+	padding-top: 2em;
 
 }
 
