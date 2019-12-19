@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="utf-8">
+    <title>Drop Down/Smart_App</title>
+    <link rel="stylesheet" type="text/css" href="reset.css">
+  <link rel="stylesheet" type="text/css" href="projekti.css">
+  </head>
+  <body>
+    <section class="smarti_free">
+
+    		<p class="smart" >
+    			SMART APP <br>
+    		</p>
+    		<p class="Free_Psd" >
+    			 All About Smart Apss
+    		</p>
+    		</section>
+        <header>
+
+            <nav id="mainMenu">
+               <ul class="lista">
+                 <li><a href="#" class="active">Home</a></li>|
+                 <li><a href="#"class="active">Style Demo</a></li>|
+                 <li><a href="#"class="active">Full Width</a></li>|
+                 <li><a href="#" class="active">Dropdown</a></li>|
+                 <li><a href="#" class="active">Gallery</a></li>
+               </ul>
+            </nav>
+            <p class="border"></p>
+        </header>
+
+
+
+
+        <div class="footer-bottom">
+          <span>Copyright © 2019</span>
+          <span style="float:right"> Template by css templates </span>
+        </div>
+  </body>
+</html>
