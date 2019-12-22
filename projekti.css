@@ -329,3 +329,16 @@ span#shigjeta{
 	align:center;
 	padding-left: 0.2em;
 }
+a.linket:hover{
+	color: #FCFFFF;
+border: none;}
+#contacti{
+	padding-bottom: 1em;
+}
+#tedhenat{
+	padding-top: 2em;
+		color:grey;
+}
+#paragrafet{
+	padding-top: 1em;
+}
