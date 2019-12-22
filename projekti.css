@@ -30,6 +30,7 @@ nav{
 nav a{
 	padding: 1em;
 	text-transform: uppercase;
+	
 }
 a:link{
 	color:#616767;
@@ -57,6 +58,7 @@ a:hover{
 	border-radius: 0 0 1em 1em;
 	float: left;
 	border-width: 100%
+
 
 }
 .smart{
@@ -229,7 +231,7 @@ p#shkronja{
 	clear: both;
 	margin-top: 2em;
 	padding: 2em;
-	border-bottom: solid 2px #ABABAB;
+	border-bottom: solid 2px #ABABAB;	
 	height: 5em;
 	
 
@@ -281,6 +283,7 @@ p.miss{
 body{
 	background-color: #1F2531;
 	color: #FFFEFF;
+
 }
 .footer-panel{
 	width:22%;
@@ -313,6 +316,8 @@ footer
 }
 .footer-bottom
 {
+	margin-left: 1em;
+	margin-right: 1em;
 	margin-top:25px;
 	border-top:1px solid grey;
 	padding-top:15px;
