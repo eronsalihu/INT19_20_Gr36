@@ -340,5 +340,22 @@ border: none;}
 		color:grey;
 }
 #paragrafet{
-	padding-top: 1em;
+	padding-top: 1.4em;
+}
+img.facebookii{
+	width: 2.2em;
+	height: 2.2em;
+	border: solid 0.01em #E3E2E0;
+	border-radius: 50%;
+}
+#fcb{
+	padding-left: 1.3em;
+			color:grey;
+
+}
+img.facebookii:hover{
+	width: 6em;
+	height: 6em;
+	-webkit-transition:width 3s,height 3s;
+	transition: width 3s,height 3s;
 }
