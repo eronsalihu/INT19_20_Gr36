@@ -5,6 +5,41 @@
     <title>Gallery/Smart_App</title>
     <link rel="stylesheet" type="text/css" href="reset.css">
   <link rel="stylesheet" type="text/css" href="projekti.css">
+  <style >
+	body
+	{
+		background-color: rgba(27,31,34,0.85);
+	}
+	h1
+	{
+		font-size: 2.1rem;
+		line-height: 1.4;
+		letter-spacing: 0.5rem;
+		text-align: center;
+		color :white;
+		margin-top: 50px;
+	}
+	.maindiv
+	{
+		width:70%;
+		height:300px;
+		position: absolute;
+		left: 50%;
+		transform:translate(-50%,10%);
+		background-image:url('https://images.pexels.com/photos/1144176/pexels-photo-1144176.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+		background-size: 100% 100%;
+		box-shadow: 1px 2px 10px 10px white;
+		animation:slider 12s infinite linear; 
+	}
+
+	@keyframes slider
+	{
+		0% { background-image: url('https://images.unsplash.com/photo-1503803548695-c2a7b4a5b875?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80');}
+		35% { background-image: url('https://images.unsplash.com/photo-1533106497176-45ae19e68ba2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80');  }
+		75% {background-image: url('https://images.pexels.com/photos/1144176/pexels-photo-1144176.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940'); }
+
+	}
+</style>
   </head>
   <body>
     <section class="smarti_free">
@@ -31,7 +66,11 @@
         </header>
 
 
+        <h1>CSS SLIDER ANIMATION</h1>
+	<div class="maindiv">
+		
 
+	</div>
 
         <div class="footer-bottom">
           <span>Copyright © 2019</span>
