@@ -271,7 +271,7 @@ p.miss{
 	width: 20em;
 }
 .signupi{
-	background-color: #dddddd;
+	/*background-color: #dddddd;*/
 	color: #B86366;
 	width: 8em;
 	height: 3.2em;
@@ -279,7 +279,8 @@ p.miss{
 	margin-left: 1em;
 	text-transform: uppercase;
 	font-weight: bold;
-	font-family:Times-New-Roman
+	font-family:Times-New-Roman;
+	lighting-color:#dddddd;
 }
 body{
 	background-color: #1F2531;
