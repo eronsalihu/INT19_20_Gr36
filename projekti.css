@@ -84,17 +84,19 @@ div.ddd{
 	margin-left: 1em;
 	text-transform: uppercase;
 	margin-top: 1em;
-	padding: 1em;
-	padding-left: 2em;
+	padding: 0.5em;
 	float: left;
-	font-size: 1em;
+	font-size: 2em;
 	border-radius: 9px;
 	letter-spacing: 2px;
-}
-.abc{
+	width: 13em;
+	text-align: center;
 
-	background:url(../Internet/phoneicon.png) no-repeat;
-	background-position: 4px 4px;
+}
+.smartphoneicon{
+height: 60px;
+width: 60px;
+
 
 }
 .outterdiv{
