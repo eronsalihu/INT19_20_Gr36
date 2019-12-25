@@ -91,9 +91,17 @@ div.ddd{
 	letter-spacing: 2px;
 	width: 13em;
 	text-align: center;
+	
+
+}
+div.ddd1{
+	
+
 
 }
 .smartphoneicon{
+	clear: both;
+	float: left;
 height: 60px;
 width: 60px;
 
