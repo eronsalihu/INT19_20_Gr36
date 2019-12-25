@@ -31,13 +31,14 @@ nav a{
 	padding: 1em;
 	text-transform: uppercase;
 }
-a:link{
-	color:#616767;
+a{
+	color:#656A6D;
 	text-decoration: none;
 	display: inline;
 
 }
-a:visited{
+
+a.active{
 	color: #FCFFFF;
 }
 a:hover{
@@ -47,10 +48,6 @@ a:hover{
 
 }
 
- .active{
-	color: #FCFFFF;
-
-}
 .smarti_free{
 	background-color: #B86366;
 	padding: 3.3em 2.1em;
@@ -271,7 +268,7 @@ p.miss{
 	width: 20em;
 }
 .signupi{
-	/*background-color: #dddddd;*/
+	background-color: #dddddd;
 	color: #B86366;
 	width: 8em;
 	height: 3.2em;
@@ -280,7 +277,7 @@ p.miss{
 	text-transform: uppercase;
 	font-weight: bold;
 	font-family:Times-New-Roman;
-	lighting-color:#dddddd;
+	
 }
 body{
 	background-color: #1F2531;
