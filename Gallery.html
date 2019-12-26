@@ -39,11 +39,13 @@
 		height:220px;
 		position: absolute;
 		left: 50%;
+		top: 350px;
 		transform:translate(-120%,230%);
+
 		
 		background-image:url('https://images.pexels.com/photos/1144176/pexels-photo-1144176.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
 		background-size: 100% 100%;
-		box-shadow: 1px 2px 10px 10px white;
+		box-shadow: 12px 12px 10px rgba(0,0,0,1);
 		animation:slider 9s infinite linear; 
 	}
 	.maindiv2
@@ -52,11 +54,13 @@
 		height:220px;
 		position: absolute;
 		left: 50%;
+
 		transform:translate(10%,230%);
 		
 		background-image:url('https://images.pexels.com/photos/1144176/pexels-photo-1144176.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
 		background-size: 100% 100%;
-		box-shadow: 1px 2px 10px 10px white;
+		box-shadow: 12px 12px 10px rgba(0,0,0,1);
+		top: 350px;
 		animation:slider 9s infinite linear; 
 	}
 	.maindiv3
@@ -166,6 +170,129 @@
 			transform: scale(1.2);
 			transition: all 300ms;
 		}
+			/* css i fotos se pare */
+			.photo, .photo img
+		{
+			width:15%;
+			height:220px;
+			bottom: -373px;
+
+			right: 150px;
+			transition: 3s transform ease-out ;
+		}
+		.photo
+		{
+			margin: 0 auto;
+			margin-top: 100px;
+			margin-right: 1200px;
+
+		}
+		.photo img
+		{
+			box-shadow: 12px 12px 10px rgba(0,0,0,0.2);
+			position: absolute;
+			transform-origin: center;
+
+		}
+		div.photo:hover img:nth-child(1)
+		{
+			transform:translateY(290px);
+		}
+		div.photo:hover img:nth-child(2)
+		{
+			transform:translateY(-290px);
+		}
+		div.photo:hover img:nth-child(3)
+		{
+			transform:translateY(220px);
+		}
+		div.photo:hover img:nth-child(4)
+		{
+			transform:translateY(-220px);
+		}
+		div.photo:hover img:nth-child(5)
+		{
+			transform:translateY(150px);
+		}
+		div.photo:hover img:nth-child(6)
+		{
+			transform:translateY(-150px);
+		}
+		div.photo:hover img:nth-child(7)
+		{
+			transform:translateY(80px);
+		}
+		div.photo:hover img:nth-child(8)
+		{
+			transform:translateY(-80px);
+		}
+		
+		/* css i fotos se dyte */
+			.photo1, .photo1 img
+		{
+			width:15%;
+			height:220px;
+			left:120px;
+			bottom: -373px;
+			transition: 3s transform ease-out ;
+
+		}
+		.photo1
+		{
+			margin: 0 auto;
+			margin-top: 100px;
+			margin-right: 1200px;
+		}
+		.photo1 img
+		{
+			box-shadow: 12px 12px 10px rgba(0,0,0,0.2);
+			position: absolute;
+			transform-origin: center;
+
+		}
+		div.photo1:hover img:nth-child(1)
+		{
+			transform:translateY(290px);
+		}
+		div.photo1:hover img:nth-child(2)
+		{
+			transform:translateY(-290px);
+		}
+		div.photo1:hover img:nth-child(3)
+		{
+			transform:translateY(220px);
+		}
+		div.photo1:hover img:nth-child(4)
+		{
+			transform:translateY(-220px);
+		}
+		div.photo1:hover img:nth-child(5)
+		{
+			transform:translateY(150px);
+		}
+		div.photo1:hover img:nth-child(6)
+		{
+			transform:translateY(-150px);
+		}
+		div.photo1:hover img:nth-child(7)
+		{
+			transform:translateY(80px);
+		}
+		div.photo1:hover img:nth-child(8)
+		{
+			transform:translateY(-80px);
+		}
+		
+		
+		img:active		{
+			width: 250px;
+			height: 250px;
+			border:5px solid black;
+			border-radius: 50%;
+			top:500;
+			margin-left: 400px;
+
+		}
 		
 		@keyframes rotar {
 			from {
@@ -199,11 +326,11 @@
 
             <nav id="mainMenu">
                <ul class="lista">
-                 <li><a href="projekti.html" >Home</a></li>|
-                 <li><a href="style_demo.html">Style Demo</a></li>|
-                 <li><a href="FullWidth.html">Full Width</a></li>|
-                 <li><a href="Drop_down.html">Dropdown</a></li>|
-                 <li><a href="Gallery.html" class="active">Gallery</a></li>
+                 <li><a href="#" class="active">Home</a></li>|
+                 <li><a href="#"class="active">Style Demo</a></li>|
+                 <li><a href="#"class="active">Full Width</a></li>|
+                 <li><a href="#" class="active">Dropdown</a></li>|
+                 <li><a href="#" class="active">Gallery</a></li>
                </ul>
             </nav>
             <p class="border"></p>
@@ -214,15 +341,7 @@
 		<tr>
 			<td>
 				<h1 id="gallery1">CSS</h1>
-			<div class="maindiv">
 		
-				
-					
-				</a>
-
-			</div>
-</td>	
-<td>
 				<h1>CSS</h1>
 			<div class="maindiv1">
 		
@@ -236,13 +355,7 @@
 
 			</div>
 			</td>
-			<td>
-				<h1>CSS</h1>
-			<div class="maindiv3">
-		
-
-			</div>
-			</td>
+			
 		</tr>
 	</table>
 	<section class="slideshow">
@@ -278,6 +391,32 @@
 					<img src="https://wallpapershome.com/images/pages/pic_h/19547.jpg">
 				</figure>
 			</div>
+			
+		</div>
+
+		
+		<div class="photo">
+			<img src="1.jpg">
+			<img src="2.jpg">
+			<img src="3.jpg">
+			<img src="4.jpg">
+			<img src="5.jpg">
+			<img src="6.jpg">
+			<img src="7.jpg">
+			<img src="8.jpg">
+			<img src="9.jpg">
+			
+		</div>
+		<div class="photo1">
+			<img src="1.jpg">
+			<img src="2.jpg">
+			<img src="3.jpg">
+			<img src="4.jpg">
+			<img src="5.jpg">
+			<img src="6.jpg">
+			<img src="7.jpg">
+			<img src="8.jpg">
+			<img src="9.jpg">
 			
 		</div>
 		
