@@ -4,8 +4,78 @@
 	<title>Smart App</title>
 	<link rel="stylesheet" type="text/css" href="projekti.css">
 	<link rel="stylesheet" type="text/css" href="reset.css">
-	<script type="" src="activebar.js"></script>
+	<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+<script src="jquery-1.11.2.min.js"></script>
 </head>
+<script> 
+$(document).ready(function(){
+  $(".smart").click(function(){
+    $(".Free_Psd").slideToggle("slow");
+	$(".smart").text("SMART APP");
+	
+  });
+});
+$(document).ready(function(){
+  $(".qqq").click(function(){
+    $("#benefi").slideToggle("slow");
+	$(".qqq");
+	
+  });
+});
+
+$(document).ready(function(){
+  $("#p1").mouseenter(function(){
+    alert("Keni hyr ne elementin p1!");
+  });
+  $("#p1").mouseleave(function(){
+    alert("Jeni larguar nga elementi p1!");
+  });
+  $("#p1").hover(function(){
+    alert("Keni kaluar mbi elementin p1!");
+  });
+  $("input").focus(function(){
+    $(this).css("background-color", "#F3C");
+	
+  });
+  $("input").blur(function(){
+    $(this).css("background-color","#6F6");
+  });
+});
+$(function(){
+
+  $("button").click(function(){
+    $(".footer-panel").hide();
+  });
+  
+  $("#btn2").click(function(){
+    $(".footer-panel").hide();
+	
+  });
+  
+  $(".footer-panel").click(function(){
+   
+	$(".footer-panel").hide();
+  });
+  
+});
+</script>
+<style> 
+#panel,#flip
+{
+padding:5px;
+text-align:center;
+background-color:#e5eecc;
+border:solid 1px #c3c3c3;
+}
+#panel
+{
+padding:50px;
+display:none;
+}
+</style>
+
 <body>
 	<div>
 <section class="smarti_free">
@@ -20,7 +90,7 @@
 	<header>
 
       <nav id="mainMenu">
-         <ul >
+         <ul>
            <li><a href="projekti.html" class="active" >Home</a></li>|
            <li><a href="style_demo.html" >Style Demo</a></li>|
            <li><a href="Full Width.html">Full Width</a></li>|
@@ -31,6 +101,7 @@
       <p class="border"></p>
   </header>
 </div>
+
 <div class="foto">
 	<img src="phone.png">
 </div>
@@ -41,7 +112,7 @@
 	</p>
 </div>
 <div class="ddd">
-	<img src="smartphone-call.svg" class="smartphoneicon"><div> NOW AVALIABLE IN THE APP STORE</div>
+	<img src="smartphone-call.svg" class="smartphoneicon"><div id="now"> NOW AVALIABLE IN THE APP STORE</div>
 </div>
 <div class="outterdiv">
 <table>
@@ -62,7 +133,7 @@
 		</td>
 		<td>
 		<div >
-		<div class="qqq">
+		<div class="qqq" >
 			<h1 id="benefi"><span class="zi">32px</span> &nbsp Benefi title here</h1>
 		<p id="shkronja">qwdsadqdwasdsada</p>
 		</div>
@@ -149,7 +220,7 @@
 		<div id="email">
 
 			<input type="text" name="" value="" placeholder="Enter Your Email Here" class="emaili">
-			<input type="button" name="Sign Up" value="Sign Up" class="signupi">
+			<input type="button" name="Sign Up" value="Sign Up" class="signupi" id="p1">
 	</div>
 	</div>
 </div>
@@ -159,7 +230,7 @@
 	<div class="footer-panel">
 		<div class="footer-title">FROM THE BLOG</div>
 		<div class="footer-content">
-			<h3>Blog Post Title</h3>
+			<h3>Blog Post Title</h3><br>
 			<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry . Lorem Ipsum has been the industry's standard dummy text ever since the 1500s , when an unknown printer took a gallery of type and scrambled it to make a type specimen book . It has survived not only five centuries , but also the leap into electronic typesetting , remaining essentially unchanged . It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages , and more recently with desktop publishing software like Aldus PageMaker including versions of Lo</p>
 
 		<a href="https://loremipsum.de/" target="_blank"><p id="read">Read more<span id="shigjeta">>></span> </p></a>
@@ -176,7 +247,7 @@
 				<li><a href="https://circleci.com/" target="_blank" class="linket">Circleci</a></li>
 				<li><a href="https://developer.apple.com/" target="_blank" class="linket">Apple Developer</a></li>
 				<li><a href="https://developer.samsung.com/" target="_blank" class="linket">Samsung Developer</a></li>
-				<li><a href="https://flutter.dev/" target="_blank" class="linket">Flutter</a>Second</li>
+				<li><a href="https://flutter.dev/" target="_blank" class="linket">Flutter</a></li>
 			</ul>
 		</div>
 	</div>
