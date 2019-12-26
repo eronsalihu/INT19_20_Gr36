@@ -94,11 +94,7 @@ div.ddd{
 	
 
 }
-div.ddd1{
-	
 
-
-}
 .smartphoneicon{
 	clear: both;
 	float: left;
@@ -234,12 +230,12 @@ p#shkronja{
 }
 
 .eee{
-	border-top: solid 2px #ABABAB;
+	border-top: solid 1px #ABABAB;
 	color: #686868;
 	clear: both;
 	margin-top: 2em;
 	padding: 2em;
-	border-bottom: solid 2px #ABABAB;
+	border-bottom: solid 1px #ABABAB;
 	height: 5em;
 
 
