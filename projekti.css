@@ -239,6 +239,7 @@ p#shkronja{
 	height: 5em;
 
 
+
 }
 p#qwe{
 	font-style: italic;
@@ -362,4 +363,42 @@ img.facebookii:hover{
 	height: 6em;
 	-webkit-transition:width 3s,height 3s;
 	transition: width 3s,height 3s;
+}
+/*dropdown_menu*/
+li a.dropdbtn.dropdown{
+	display: inline-block;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	margin: 0;
+ }
+ li a:hover,.dropdown:hover{
+ background-color: #1F2531;	 
+ }
+ li.dropdown{
+ 	display: inline-block;
+
+ }
+.dropdown-content{
+	margin-top: 1em;
+	display: none;
+	position: absolute;
+	background:#B86366;
+	min-width: 130px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0,2);
+
+}
+.dropdown-content a{
+	color: black;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+	text-align: left;
+	float: none;
+}
+.dropdown-content a:hover{
+background-color: :#1F2531;
+}
+.dropdown:hover .dropdown-content{
+	display: block;
 }
