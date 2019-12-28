@@ -5,8 +5,35 @@
     <title>Gallery/Smart_App</title>
     <link rel="stylesheet" type="text/css" href="reset.css">
   <link rel="stylesheet" type="text/css" href="projekti.css">
-  <style >
+  
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="jquery-1.11.2.min.js"></script>
+<script> 
+$(document).ready(function(){
+  $(".photo1").hover(function(){
+    $(".maindiv").slideToggle("slow");
 	
+	
+  });
+});
+</script>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="jquery-1.11.2.min.js"></script>
+<script> 
+$(document).ready(function(){
+  $(".photo").hover(function(){
+    $(".maindiv3").slideToggle("slow");
+	
+	
+  });
+});
+</script>
+  <style >
+	body
+	{
+		background-color: rgba(27,31,34,0.85);
+	}
 	h1
 	{
 		font-size: 3.1rem;
@@ -17,12 +44,14 @@
 		margin-top: 50px;
 		margin-right: 100px;
 	}
+	/* pjesa e 4 fotove poshte */
 	.maindiv
 	{
 		width:15%;
 		height:220px;
 		position: absolute;
-		left: 50%;
+		left: 42%;
+		top: 350px;
 		transform:translate(-250%,230%);
 		background-image:url('https://images.pexels.com/photos/1144176/pexels-photo-1144176.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
 		background-size: 100% 100%;
@@ -35,9 +64,9 @@
 		width:15%;
 		height:220px;
 		position: absolute;
-		left: 50%;
+		left: 47%;
+		top: 350px;
 		transform:translate(-120%,230%);
-		
 		background-image:url('https://images.pexels.com/photos/1144176/pexels-photo-1144176.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
 		background-size: 100% 100%;
 		box-shadow: 1px 2px 10px 10px white;
@@ -48,7 +77,8 @@
 		width:15%;
 		height:220px;
 		position: absolute;
-		left: 50%;
+		left: 52%;
+		top: 350px;
 		transform:translate(10%,230%);
 		
 		background-image:url('https://images.pexels.com/photos/1144176/pexels-photo-1144176.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
@@ -61,15 +91,18 @@
 		width:15%;
 		height:220px;
 		position: absolute;
-		left: 50%;
+		left: 57%;
 		transform:translate(140%,230%);
-		
+		top: 350px;
 		background-image:url('https://images.pexels.com/photos/1144176/pexels-photo-1144176.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
 		background-size: 100% 100%;
 		box-shadow: 1px 2px 10px 10px white;
 		animation:slider 9s infinite linear; 
 	}
-	.slideshow{
+	/* pjesa e 4 fotove poshte eshte deri ketu */
+	
+	/* pjesa e  fotove rrotulluese */
+		.slideshow{
 
 			margin:auto;
 			padding-top: 150px;
@@ -79,6 +112,7 @@
 		.content
 		{
 			margin:auto;
+			left: -18px;
 			width: 190px;
 			perspective: 1000px;
 			position: relative;
@@ -163,7 +197,131 @@
 			transform: scale(1.2);
 			transition: all 300ms;
 		}
+			/* css i fotos se pare djathtas*/
+			.photo, .photo img
+		{
+			width:15%;
+			height:220px;
+			bottom: 25px;
+
+			right: 107px;
+			transition: 3s transform ease-out ;
+		}
+		.photo
+		{
+			margin: 0 auto;
+			margin-top: 100px;
+			margin-right: 1200px;
+
+		}
+		.photo img
+		{
+			box-shadow: 12px 12px 10px rgba(0,0,0,0.2);
+			position: absolute;
+			transform-origin: center;
+
+		}
+		div.photo:hover img:nth-child(1)
+		{
+			transform:translateY(290px);
+		}
+		div.photo:hover img:nth-child(2)
+		{
+			transform:translateY(-290px);
+		}
+		div.photo:hover img:nth-child(3)
+		{
+			transform:translateY(220px);
+		}
+		div.photo:hover img:nth-child(4)
+		{
+			transform:translateY(-220px);
+		}
+		div.photo:hover img:nth-child(5)
+		{
+			transform:translateY(150px);
+		}
+		div.photo:hover img:nth-child(6)
+		{
+			transform:translateY(-150px);
+		}
+		div.photo:hover img:nth-child(7)
+		{
+			transform:translateY(80px);
+		}
+		div.photo:hover img:nth-child(8)
+		{
+			transform:translateY(-80px);
+		}
 		
+		/* css i fotos se dyte majtas */
+			.photo1, .photo1 img
+		{
+			width:15%;
+			height:220px;
+			left: 68px;
+			bottom: 25px;
+			transition: 3s transform ease-out ;
+
+		}
+		.photo1
+		{
+			margin: 0 auto;
+			margin-top: 100px;
+			margin-right: 1200px;
+		}
+		.photo1 img
+		{
+			box-shadow: 12px 12px 10px rgba(0,0,0,0.2);
+			position: absolute;
+			transform-origin: center;
+
+		}
+		div.photo1:hover img:nth-child(1)
+		{
+			transform:translateY(290px);
+		}
+		div.photo1:hover img:nth-child(2)
+		{
+			transform:translateY(-290px);
+		}
+		div.photo1:hover img:nth-child(3)
+		{
+			transform:translateY(220px);
+		}
+		div.photo1:hover img:nth-child(4)
+		{
+			transform:translateY(-220px);
+		}
+		div.photo1:hover img:nth-child(5)
+		{
+			transform:translateY(150px);
+		}
+		div.photo1:hover img:nth-child(6)
+		{
+			transform:translateY(-150px);
+		}
+		div.photo1:hover img:nth-child(7)
+		{
+			transform:translateY(80px);
+		}
+		div.photo1:hover img:nth-child(8)
+		{
+			transform:translateY(-80px);
+		}
+		
+		/* pjesa e 2 fotove anash  */
+		img:active		{
+			width: 250px;
+			height: 250px;
+			border:5px solid black;
+			border-radius: 50%;
+			top:100px;
+			left: -100px;
+			margin-left: 400px;
+
+		}
+		/* pjesa e fotove rrotulluese */
 		@keyframes rotar {
 			from {
 				transform:rotateY(0deg);
@@ -172,7 +330,7 @@
 				transform:rotateY(360deg);
 			}
 		}
-
+		/* pjesa e 4 fotove poshte me slider*/
 	@keyframes slider
 	{
 		0% { background-image: url('https://images.unsplash.com/photo-1514214246283-d427a95c5d2f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1946&q=80');}
@@ -196,11 +354,11 @@
 
             <nav id="mainMenu">
                <ul class="lista">
-                 <li><a href="projekti.html" >Home</a></li>|
-                 <li><a href="style_demo.html">Style Demo</a></li>|
-                 <li><a href="FullWidth.html">Full Width</a></li>|
-                 <li><a href="Drop_down.html">Dropdown</a></li>|
-                 <li><a href="Gallery.html" class="active">Gallery</a></li>
+                 <li><a href="#" class="active">Home</a></li>|
+                 <li><a href="#"class="active">Style Demo</a></li>|
+                 <li><a href="#"class="active">Full Width</a></li>|
+                 <li><a href="#" class="active">Dropdown</a></li>|
+                 <li><a href="#" class="active">Gallery</a></li>
                </ul>
             </nav>
             <p class="border"></p>
@@ -211,15 +369,14 @@
 		<tr>
 			<td>
 				<h1 id="gallery1">CSS</h1>
+		
+				<h1>CSS</h1>
 			<div class="maindiv">
 		
-				
-					
-				</a>
 
 			</div>
-</td>	
-<td>
+			</td>
+			<td>
 				<h1>CSS</h1>
 			<div class="maindiv1">
 		
@@ -227,6 +384,8 @@
 			</div>
 			</td>
 			<td>
+				<h1 id="gallery1">CSS</h1>
+		
 				<h1>CSS</h1>
 			<div class="maindiv2">
 		
@@ -234,12 +393,15 @@
 			</div>
 			</td>
 			<td>
+				<h1 id="gallery1">CSS</h1>
+		
 				<h1>CSS</h1>
 			<div class="maindiv3">
 		
 
 			</div>
 			</td>
+			
 		</tr>
 	</table>
 	<section class="slideshow">
@@ -275,6 +437,32 @@
 					<img src="https://wallpapershome.com/images/pages/pic_h/19547.jpg">
 				</figure>
 			</div>
+			
+		</div>
+
+		
+		<div class="photo">
+			<img src="1.jpg">
+			<img src="2.jpg">
+			<img src="3.jpg">
+			<img src="4.jpg">
+			<img src="5.jpg">
+			<img src="6.jpg">
+			<img src="7.jpg">
+			<img src="8.jpg">
+			<img src="9.jpg">
+			
+		</div>
+		<div class="photo1">
+			<img src="1.jpg">
+			<img src="2.jpg">
+			<img src="3.jpg">
+			<img src="4.jpg">
+			<img src="5.jpg">
+			<img src="6.jpg">
+			<img src="7.jpg">
+			<img src="8.jpg">
+			<img src="9.jpg">
 			
 		</div>
 		
