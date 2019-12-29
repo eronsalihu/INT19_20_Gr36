@@ -30,7 +30,7 @@
             handleLocationError(true, infoWindow, map.getCenter());
           });
         } else {
-     
+
           handleLocationError(false, infoWindow, map.getCenter());
         }
       }
@@ -66,14 +66,14 @@ $(document).ready(function(){
 });
 
 $(document).ready(function(){
-  $("#p1").mouseenter(function(){
-    alert("Keni hyr ne elementin p1!");
+  $(".signupi").mouseenter(function(){
+    alert("Keni hyr elementin e kyqjes!");
   });
-  $("#p1").mouseleave(function(){
-    alert("Jeni larguar nga elementi p1!");
+  $(".signupi").mouseleave(function(){
+    alert("Jeni larguar nga elementi kyqjes!");
   });
-  $("#p1").hover(function(){
-    alert("Keni kaluar mbi elementin p1!");
+  $(".signupi").hover(function(){
+    alert("Keni kaluar mbi elementin e kyqjes!");
   });
   $("input").focus(function(){
     $(this).css("background-color", "#F3C");
@@ -166,27 +166,30 @@ display:none;
 		<td rowspan="2">
 		<div>
 		<div class="innerdiv1">
-		<h1>Feature 1</h1>
-		<p>qwertyu</p>
+		<h1>Whole house</h1>
+		<p id="feat">connect ur all applications of the house.Just look for the "Works with SmartThings" label</p>
 		</div>
 		</td>
 		<td rowspan="2">
 		<div class="innerdiv2">
-		<h1>Feature 2</h1>
-		<p>deadqedeq</p>
+		<h1>Multiple Screens</h1>
+		<p id="feat">Access SmartThings features across a family of Samsung products</p>
 		</div>
 		</td>
 		<td>
 		<div >
 		<div class="qqq" >
-			<h1 id="benefi"><span class="zi">32px</span> &nbsp Benefi title here</h1>
-		<p id="shkronja">qwdsadqdwasdsada</p>
+			<h1 id="benefi"><span class="zi">32px</span> &nbsp Simple Setup</h1>
+		<p id="shkronja">Getting started is easy with a <br>Samsung Account. Once you've created <br> your SmartThings profile,
+
+
+</p>
 		</div>
 		</td>
 		<td>
 		<div class="qqq1">
-			<h1 id="benefi"><span class="zi">32px</span>&nbsp Benefi title here</h1>
-		<p id="shkronja">qwdsadqdwasdsada</p>
+			<h1 id="benefi"><span class="zi">32px</span>&nbsp scan your QR code</h1>
+		<p id="shkronja">Simply scan your device's QR code <br> through your camera or SmartThings app <br> and enjoy seamless control.</p>
 		</div>
 		</td>
 			</tr>
@@ -210,15 +213,15 @@ display:none;
 
 <td rowspan="2">
 		<div class="innerdiv3">
-		<h1>Feature 3</h1>
-		<p>dsadsadsad</p>
+		<h1>Smarter living</h1>
+		<p id="feat">Feel more at home by making your home smarter with new SmartThings services.</p>
 		</div>
 		</td>
 		<td rowspan="2">
 		<div class="innerdiv4">
 
-		<h1>Feature 4</h1>
-		<p>dsadsadsadsa</p>
+		<h1>Smart Devices</h1>
+		<p id="feat">Because smart should be simple, however many devices you bring home.</p>
 		</div>
 		</td>
 		<td>
