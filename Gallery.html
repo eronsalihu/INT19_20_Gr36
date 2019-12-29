@@ -11,7 +11,10 @@
 <script> 
 $(document).ready(function(){
   $(".photo1").hover(function(){
-    $(".maindiv").slideToggle("slow");
+    $(".maindiv").slideToggle("fast");
+    $(".maindiv4").slideToggle("slow");
+	$(".maindiv5").slideToggle("slow");
+	$(".maindiv6").slideToggle("slow");
 	
 	
   });
@@ -23,14 +26,22 @@ $(document).ready(function(){
 <script> 
 $(document).ready(function(){
   $(".photo").hover(function(){
-    $(".maindiv3").slideToggle("slow");
+    $(".maindiv3").slideToggle("fast");
+    $(".maindiv5").slideToggle("slow");
+    $(".maindiv6").slideToggle("slow");
+    $(".maindiv7").slideToggle("slow");
+
 	
 	
   });
 });
 </script>
   <style >
-
+	body
+	{
+		background-color: rgba(27,31,34,0.85);
+		
+	}
 	h1
 	{
 		font-size: 3.1rem;
@@ -42,13 +53,14 @@ $(document).ready(function(){
 		margin-right: 100px;
 	}
 	/* pjesa e 4 fotove poshte */
+	
 	.maindiv
 	{
-		width:15%;
-		height:220px;
+		width:13%;
+		height:200px;
 		position: absolute;
-		left: 42%;
-		top: 350px;
+		left: 38%;
+		top: 560px;
 		transform:translate(-250%,230%);
 		background-image:url('images/otherimages/4.jpg');
 		background-size: 100% 100%;
@@ -58,11 +70,11 @@ $(document).ready(function(){
 
 	.maindiv1
 	{
-		width:15%;
-		height:220px;
+		width:13%;
+		height:200px;
 		position: absolute;
-		left: 47%;
-		top: 350px;
+		left: 45.5%;
+		top: 560px;
 		transform:translate(-120%,230%);
 		background-image:url('images/otherimages/5.jpg');
 		background-size: 100% 100%;
@@ -71,11 +83,11 @@ $(document).ready(function(){
 	}
 	.maindiv2
 	{
-		width:15%;
-		height:220px;
+		width:13%;
+		height:200px;
 		position: absolute;
-		left: 52%;
-		top: 350px;
+		left: 53%;
+		top: 560px;
 		transform:translate(10%,230%);
 		
 		background-image:url('images/otherimages/6.jpg');
@@ -85,26 +97,84 @@ $(document).ready(function(){
 	}
 	.maindiv3
 	{
-		width:15%;
-		height:220px;
+		width:13%;
+		height:200px;
 		position: absolute;
-		left: 57%;
+		left: 61%;
 		transform:translate(140%,230%);
-		top: 350px;
+		top: 560px;
 		background-image:url('images/otherimages/7.jpg');
 		background-size: 100% 100%;
 		box-shadow: 1px 2px 10px 10px white;
 		animation:slider 9s infinite linear; 
+
+	}
+	.maindiv4
+	{
+		width:13%;
+		height:200px;
+		position: absolute;
+		left: 38%;
+		top: -180px;
+		transform:translate(-250%,230%);
+		background-image:url('images/otherimages/4.jpg');
+		background-size: 100% 100%;
+		box-shadow: 1px 2px 10px 10px white;
+		animation:slider 9s infinite linear; 
+
+	}
+	.maindiv5
+	{
+		width:13%;
+		height:200px;
+		position: absolute;
+		left: 45.5%;
+		top: -180px;
+		transform:translate(-120%,230%);
+		background-image:url('images/otherimages/5.jpg');
+		background-size: 100% 100%;
+		box-shadow: 1px 2px 10px 10px white;
+		animation:slider 9s infinite linear; 
+	}
+	.maindiv6
+	{
+		width:13%;
+		height:200px;
+		position: absolute;
+		left: 53%;
+		top: -180px;
+		transform:translate(10%,230%);
+		
+		background-image:url('images/otherimages/6.jpg');
+		background-size: 100% 100%;
+		box-shadow: 1px 2px 10px 10px white;
+		animation:slider 9s infinite linear; 
+	}
+	.maindiv7
+	{
+		width:13%;
+		height:200px;
+		position: absolute;
+		left: 60.7%;
+		transform:translate(140%,230%);
+		top: -180px;
+		background-image:url('images/otherimages/7.jpg');
+		background-size: 100% 100%;
+		box-shadow: 1px 2px 10px 10px white;
+		animation:slider 9s infinite linear; 
+
 	}
 	/* pjesa e 4 fotove poshte eshte deri ketu */
 	
-	/* pjesa e  fotove rrotulluese */
+	/* pjesa e fotove rrotulluese */
 		.slideshow{
 
 			margin:auto;
 			padding-top: 150px;
 			height: 700px;
 			box-sizing: border-box;
+			margin-top: 360px;
+
 		}
 		.content
 		{
@@ -114,6 +184,8 @@ $(document).ready(function(){
 			perspective: 1000px;
 			position: relative;
 			padding-top: 10px;
+
+
 		}
 		.content-carrousel
 		{
@@ -122,11 +194,14 @@ $(document).ready(function(){
 			float: right;
 			animation:rotar 15s infinite linear;
 			transform-style: preserve-3d;
+
+
 		}
 		.content-carrousel:hover
 		{
 			animation-play-state: paused;
 			cursor: pointer;
+			
 
 		}
 		.content-carrousel figure
@@ -188,6 +263,7 @@ $(document).ready(function(){
 			width: 100%;
 			height:100%;
 
+
 		}
 		.content-carrousel img:hover
 		{
@@ -197,10 +273,10 @@ $(document).ready(function(){
 			/* css i fotos se pare djathtas*/
 			.photo, .photo img
 		{
-			width:15%;
-			height:220px;
-			bottom: 25px;
-			right: 107px;
+			width:13%;
+			height:200px;
+			bottom: -95px;
+			right: 122px;
 			transition: 3s transform ease-out ;
 		}
 		.photo
@@ -253,10 +329,10 @@ $(document).ready(function(){
 		/* css i fotos se dyte majtas */
 			.photo1, .photo1 img
 		{
-			width:15%;
-			height:220px;
-			left: 68px;
-			bottom: 25px;
+			width:13%;
+			height:200px;
+			left: 84px;
+			bottom: -95px;
 			transition: 3s transform ease-out ;
 
 		}
@@ -307,15 +383,239 @@ $(document).ready(function(){
 		}
 		
 		/* pjesa e 2 fotove anash  */
-		img:active		{
-			width: 250px;
-			height: 250px;
-			border:5px solid black;
-			border-radius: 50%;
-			top:100px;
-			left: -100px;
+		.photo1:hover img:nth-child(1):active
+		{
+			width: 230px;
+			height: 230px;
+			border:2px darkorange;
+			border-style: dotted;
+			border-radius: 35%;
+			bottom: 60%;
+			left: 210px;
 			margin-left: 400px;
 
+		}
+		.photo1:hover img:nth-child(2):active
+		{
+			width: 230px;
+			height: 230px;
+			border:2px darkorange;
+			border-style: dotted;
+			border-radius: 35%;
+			bottom: -19%;
+			left: 210px;
+			margin-left: 400px;
+
+
+		}
+		.photo1:hover img:nth-child(3):active
+		{
+			width: 230px;
+			height: 230px;
+			border:2px darkorange;
+			border-style: dotted;
+			border-radius: 35%;
+			bottom: 50%;
+			left: 210px;
+			margin-left: 400px;
+
+
+		}
+		.photo1:hover img:nth-child(4):active
+		{
+			width: 230px;
+			height: 230px;
+			border:2px darkorange;
+			border-style: dotted;
+			border-radius: 35%;
+			bottom: -10%;
+			left: 210px;
+			margin-left: 400px;
+
+
+		}
+		.photo1:hover img:nth-child(5):active
+		{
+			width: 230px;
+			height: 230px;
+			border:2px darkorange;
+			border-style: dotted;
+			border-radius: 35%;
+			bottom: 40%;
+			left: 210px;
+			margin-left: 400px;
+
+
+		}
+		.photo1:hover img:nth-child(6):active
+		{
+			width: 230px;
+			height: 230px;
+			border:2px darkorange;
+			border-style: dotted;
+			border-radius: 35%;
+			bottom: -1%;
+			left: 210px;
+			margin-left: 400px;
+
+
+		}
+		.photo1:hover img:nth-child(7):active
+		{
+			width: 230px;
+			height: 230px;
+			border:2px darkorange;
+			border-style: dotted;
+			border-radius: 35%;
+			bottom: 30%;
+			left: 210px;
+			margin-left: 400px;
+
+
+		}
+		.photo1:hover img:nth-child(8):active
+		{
+			width: 230px;
+			height: 230px;
+			border:2px darkorange;
+			border-style: dotted;
+			border-radius: 35%;
+			bottom: 8%;
+			left: 210px;
+			margin-left: 400px;
+
+
+		}
+		.photo1:hover img:nth-child(9):active
+		{
+			width: 230px;
+			height: 230px;
+			border:2px darkorange;
+			border-style: dotted;
+			border-radius: 35%;
+			bottom: 20%;
+			left: 210px;
+			margin-left: 400px;
+
+		}
+		.photo:hover img:nth-child(1):active
+		{
+			width: 230px;
+			height: 230px;
+			border:2px darkorange;
+			border-style: dotted;
+			border-radius: 35%;
+			bottom: 60%;
+			left: 210px;
+			margin-left: 400px;
+
+
+		}
+		.photo:hover img:nth-child(2):active
+		{
+			width: 230px;
+			height: 230px;
+			border:2px darkorange;
+			border-style: dotted;
+			border-radius: 35%;
+			bottom: -19%;
+			left: 210px;
+			margin-left: 400px;
+
+
+		}
+		.photo:hover img:nth-child(3):active
+		{
+			width: 230px;
+			height: 230px;
+			border:2px darkorange;
+			border-style: dotted;
+			border-radius: 35%;
+			bottom: 50%;
+			left: 210px;
+			margin-left: 400px;
+
+
+		}
+		.photo:hover img:nth-child(4):active
+		{
+			width: 230px;
+			height: 230px;
+			border:2px darkorange;
+			border-style: dotted;
+			border-radius: 35%;
+			bottom: -10%;
+			left: 210px;
+			margin-left: 400px;
+
+
+		}
+		.photo:hover img:nth-child(5):active
+		{
+			width: 230px;
+			height: 230px;
+			border:2px darkorange;
+			border-style: dotted;
+			border-radius: 35%;
+			bottom: 40%;
+			left: 210px;
+			margin-left: 400px;
+
+
+		}
+		.photo:hover img:nth-child(6):active
+		{
+			width: 230px;
+			height: 230px;
+			border:2px darkorange;
+			border-style: dotted;
+			border-radius: 35%;
+			bottom: -1%;
+			left: 210px;
+			margin-left: 400px;
+
+
+		}
+		.photo:hover img:nth-child(7):active
+		{
+			width: 230px;
+			height: 230px;
+			border:2px darkorange;
+			border-style: dotted;
+			border-radius: 35%;
+			bottom: 30%;
+			left: 210px;
+			margin-left: 400px;
+
+
+		}
+		.photo:hover img:nth-child(8):active
+		{
+			width: 230px;
+			height: 230px;
+			border:2px darkorange;
+			border-style: dotted;
+			border-radius: 35%;
+			bottom: 8%;
+			left: 210px;
+			margin-left: 400px;
+
+
+		}
+		.photo:hover img:nth-child(9):active
+		{
+			width: 230px;
+			height: 230px;
+			border:2px darkorange;
+			border-style: dotted;
+			border-radius: 35%;
+			bottom: 20%;
+			left: 210px;
+			margin-left: 400px;
+		}
+		.footer-bottom
+		{
+			margin-top:350px;
 		}
 		/* pjesa e fotove rrotulluese */
 		@keyframes rotar {
@@ -350,49 +650,71 @@ $(document).ready(function(){
 
             <nav id="mainMenu">
                <ul class="lista">
-                 <li><a href="projekti.html" >Home</a></li>|
-                 <li><a href="style_demo.html">Style Demo</a></li>|
-                 <li><a href="FUll Width.html">Full Width</a></li>|
-                 <li><a href="Drop_Down.html" >Dropdown</a></li>|
-                 <li><a href="Gallery.html" class="active">Gallery</a></li>
+                 <li><a href="#" class="active">Home</a></li>|
+                 <li><a href="#"class="active">Style Demo</a></li>|
+                 <li><a href="#"class="active">Full Width</a></li>|
+                 <li><a href="#" class="active">Dropdown</a></li>|
+                 <li><a href="#" class="active">Gallery</a></li>
                </ul>
             </nav>
             <p class="border"></p>
         </header>
 
 
-        <table>
+        <table class="pos">
 		<tr>
 			<td>
-				<h1 id="gallery1">CSS</h1>
-		
-				<h1>CSS</h1>
+				
 			<div class="maindiv">
 		
 
 			</div>
 			</td>
 			<td>
-				<h1>CSS</h1>
+				
 			<div class="maindiv1">
 		
 
 			</div>
 			</td>
 			<td>
-				<h1 id="gallery1">CSS</h1>
-		
-				<h1>CSS</h1>
+				
 			<div class="maindiv2">
 		
 
 			</div>
 			</td>
 			<td>
-				<h1 id="gallery1">CSS</h1>
-		
-				<h1>CSS</h1>
+
 			<div class="maindiv3">
+		
+
+			</div>
+			</td>
+			<td>
+
+			<div class="maindiv4">
+		
+
+			</div>
+			</td>
+			<td>
+
+			<div class="maindiv5">
+		
+
+			</div>
+			</td>
+			<td>
+
+			<div class="maindiv6">
+		
+
+			</div>
+			</td>
+			<td>
+
+			<div class="maindiv7">
 		
 
 			</div>
@@ -466,6 +788,6 @@ $(document).ready(function(){
         <div class="footer-bottom">
           <span>Copyright © 2019</span>
           <span style="float:right"> Template by css templates </span>
-        </div>
+        </div>z
   </body>
 </html>
