@@ -6,6 +6,7 @@
 	<link rel="stylesheet" type="text/css" href="reset.css">
 	<script src='https://kit.fontawesome.com/a076d05399.js'></script>
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
 	<div id="map"></div>
     <script>
     var map, infoWindow;
@@ -167,7 +168,7 @@ display:none;
 		<div>
 		<div class="innerdiv1">
 		<h1>Whole house</h1>
-		<p id="feat">Connect ur all applications of the house.Just look for the "Works with SmartThings" label</p>
+		<p id="feat">connect ur all applications of the house.Just look for the "Works with SmartThings" label</p>
 		</div>
 		</td>
 		<td rowspan="2">
@@ -180,7 +181,7 @@ display:none;
 		<div >
 		<div class="qqq" >
 			<h1 id="benefi"><span class="zi">32px</span> &nbsp Simple Setup</h1>
-		<p id="shkronja">Getting started is easy with a Samsung Account. Once you've created your SmartThings profile,
+		<p id="shkronja">Getting started is easy with a <br>Samsung Account. Once you've created <br> your SmartThings profile,
 
 
 </p>
@@ -188,8 +189,8 @@ display:none;
 		</td>
 		<td>
 		<div class="qqq1">
-			<h1 id="benefi"><span class="zi">32px</span>&nbsp Scan Your QR Code</h1>
-		<p id="shkronja">Simply scan your device's QR code through your camera or SmartThings app and enjoy seamless control.</p>
+			<h1 id="benefi"><span class="zi">32px</span>&nbsp scan your QR code</h1>
+		<p id="shkronja">Simply scan your device's QR code <br> through your camera or SmartThings app <br> and enjoy seamless control.</p>
 		</div>
 		</td>
 			</tr>
@@ -197,14 +198,14 @@ display:none;
 		<td>
 		<div class="qqq2">
 			<h1 id="benefi"> <span class="zi">32px</span> &nbsp Connect </h1>
-		<p id="shkronja">Theres no need to download any  app Open camera and scan the  code with scanner
+		<p id="shkronja">Theres no need to download any <br> app Open camera and scan the  code
 		</p>
 	</div>
 	</td>
 	<td>
 	<div class="qqq3">
-			<h1 id="benefi"><span class="zi">32px</span>  &nbsp Use Smarthing </h1>
-		<p id="shkronja">Setup your smartHome with the app SmartThings.Use the integrated Qr code  </p>
+			<h1 id="benefi"><span class="zi">32px</span>  &nbsp Use smarthing </h1>
+		<p id="shkronja">Setup your smartHome with the app  <br>SmartThings.Use the <br>integrated Qr code  </p>
 		</td>
 		</tr>
 	</div>
@@ -214,7 +215,7 @@ display:none;
 
 <td rowspan="2">
 		<div class="innerdiv3">
-		<h1>Smarter Living</h1>
+		<h1>Smarter living</h1>
 		<p id="feat">Feel more at home by making your home smarter with new SmartThings services.</p>
 		</div>
 		</td>
@@ -229,14 +230,14 @@ display:none;
 	<div class="qqq2">
 
 			<h1 id="benefi"><span class="zi">32px</span> &nbsp Your Home</h1>
-		<p id="shkronja">Your home smarter with custom automation. Create schedules and scenarios, and let SmartThings do the rest.</p>
+		<p id="shkronja">Your home smarter with custom <br> automation. Create schedules and <br> scenarios, and let SmartThings do the rest.</p>
 	</div>
 	</td>
 	<td>
 	<div class="qqq3">
 
-			<h1 id="benefi"><span class="zi">32px</span> &nbsp Hands-free Control</h1>
-		<p id="shkronja">Use Bixby on your Galaxy phone to  control your smart devices by voice.
+			<h1 id="benefi"><span class="zi">32px</span> &nbsp Hands-free control.</h1>
+		<p id="shkronja">Use Bixby on your Galaxy phone to <br> control your smart devices by voice.<br>
  Playing music is as simple as saying it.</p>
 	</div>
 	</td>
@@ -245,17 +246,17 @@ display:none;
 		<td>
 		<div class="qqq3">
 
-				<h1 id="benefi"><span class="zi">32px</span> &nbsp Motion Sensor</h1>
-			<p id="shkronja">Smart things app can be used about motion sensor as well to.You might
+				<h1 id="benefi"><span class="zi">32px</span> &nbsp Motion sensor</h1>
+			<p id="shkronja">Smart things app can be used about <br> motion sensor as well to.You might <br>
 			control the motions from phone </p>
 		</td>
 		<td>
 		</div>
 			<div class="qqq2">
 
-					<h1 id="benefi"><span class="zi">32px</span> &nbsp Connect Your TV</h1>
-				<p id="shkronja">You might use it to connect 
-				TV to play the preffered 
+					<h1 id="benefi"><span class="zi">32px</span> &nbsp Connect your TV</h1>
+				<p id="shkronja">You might use it to connect
+				TV to play<br> the preffered <br>
 				program you want to see on
 			 </p>
 			</div>
@@ -264,8 +265,35 @@ display:none;
 	</div>
 	</div>
 </table>
+<table>
+<tr>
 
+<td id="majtas">
+ <canvas id="myCanvas" width="150" height="150"></canvas>
+</td>
+<script>
+	var canvasElement = document.querySelector("#myCanvas");
+	var context = canvasElement.getContext("2d");
 
+	// the triangle
+	context.beginPath();
+	context.moveTo(50, 100);
+	context.lineTo(80, 70);
+	context.lineTo(70, 100);
+	context.lineTo(80,130);
+	context.closePath();
+
+	// the outline
+	context.lineWidth = 10;
+	context.strokeStyle = '#E2E2E2';
+	context.stroke();
+
+	// the fill color
+	context.fillStyle = "#E2E2E2";
+	context.fill();
+</script>
+
+<td>
 	<div class="eee">
 		<div id="sub"><p class="sub">SUBSCRIBE</p>
 		<p class="miss">Don't Miss Our Last Offers & Promotions</p>
@@ -275,7 +303,32 @@ display:none;
 			<input type="button" name="Sign Up" value="Sign Up" class="signupi" id="p1">
 		</div>
 	</div>
+</td>
+<td><td id="djathtas"><canvas id="myCanvas1" width="150" height="170"></canvas>
+	<script>
+		var canvasElement = document.querySelector("#myCanvas");
+		var context = canvasElement.getContext("2d");
 
+		// the triangle
+		context.beginPath();
+		context.moveTo(100, 100);
+		context.lineTo(70, 70);
+		context.lineTo(80, 100);
+		context.lineTo(70,130);
+		context.closePath();
+
+		// the outline
+		context.lineWidth = 10;
+		context.strokeStyle = '#E2E2E2';
+		context.stroke();
+
+		// the fill color
+		context.fillStyle = "#E2E2E2";
+		context.fill();
+	</script></td>
+	</tr>
+</table>
+</div>
 </div>
 </div>
 
