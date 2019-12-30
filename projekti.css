@@ -216,12 +216,8 @@ width: 60px;
 	margin-top: 1em;
 }
 .zi{
-	border:solid  1px;
-	background-color: #3A3A3A;
-	color: #FDFDFD;
-	font-size: 18px;
-	padding-top:10px;
-	padding-bottom: 10px;
+margin-right: 1em;
+
 }
 h1#benefi{
 	padding-bottom: .5em;
@@ -293,7 +289,10 @@ p.miss{
 	padding-left: 0em;
 	font-size: 1.4em;
 }
-
+img.smartthing{
+	width: 35px;
+	height: 35px;
+}
 .emaili{
 
 	margin-left: 9em;
