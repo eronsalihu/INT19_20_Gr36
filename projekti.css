@@ -97,8 +97,8 @@ div.ddd{
 .smartphoneicon{
 	clear: both;
 	float: left;
-height: 60px;
-width: 60px;
+	height: 60px;
+	width: 60px;
 
 }
 .outterdiv{
@@ -108,7 +108,7 @@ width: 60px;
 	margin-left: 1em;
 	border-radius: 1.5em;
 	padding: 1em;
-	height: 54em;
+	height: 60em;
 
 
 }
@@ -345,7 +345,7 @@ footer
 .footer-bottom
 {
 	margin-top:25px;
-	border-top:1px solid grey;
+	border-top:solid 1px #5C606C;
 	padding-top:15px;
 	margin-left: 1em;
 	margin-right: 1em;
@@ -362,13 +362,14 @@ span#shigjeta{
 }
 a.linket:hover{
 	color: #FCFFFF;
-border: none;}
+	border: none;
+}
 #contacti{
 	padding-bottom: 1em;
 }
 #tedhenat{
 	padding-top: 2em;
-		color:grey;
+	color:grey;
 }
 #paragrafet{
 	padding-top: 1.4em;
@@ -381,7 +382,7 @@ img.facebookii{
 }
 #fcb{
 	padding-left: 1.3em;
-			color:grey;
+	color:grey;
 
 }
 img.facebookii:hover{
