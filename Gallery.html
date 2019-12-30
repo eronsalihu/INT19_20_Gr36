@@ -10,32 +10,26 @@
 <script src="jquery-1.11.2.min.js"></script>
 <script> 
 $(document).ready(function(){
-  $(".photo1").hover(function(){
-    $(".maindiv").slideToggle("fast");
-    $(".maindiv4").slideToggle("slow");
-	$(".maindiv5").slideToggle("slow");
-	$(".maindiv6").slideToggle("slow");
+  $(".photo").hover(function(){
+    $(".teksti").slideToggle("slow");
 	
 	
   });
 });
 </script>
-
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 <script src="jquery-1.11.2.min.js"></script>
 <script> 
 $(document).ready(function(){
-  $(".photo").hover(function(){
-    $(".maindiv3").slideToggle("fast");
-    $(".maindiv5").slideToggle("slow");
-    $(".maindiv6").slideToggle("slow");
-    $(".maindiv7").slideToggle("slow");
-
+  $(".photo1").hover(function(){
+    $(".teksti").slideToggle("slow");
 	
 	
   });
 });
 </script>
+ 
+
   <style >
 	body
 	{
@@ -64,7 +58,7 @@ $(document).ready(function(){
 		transform:translate(-250%,230%);
 		background-image:url('images/otherimages/4.jpg');
 		background-size: 100% 100%;
-		box-shadow: 1px 2px 10px 10px white;
+		box-shadow: 1px 2px 10px 10px black;
 		animation:slider 9s infinite linear; 
 	}
 
@@ -78,7 +72,7 @@ $(document).ready(function(){
 		transform:translate(-120%,230%);
 		background-image:url('images/otherimages/5.jpg');
 		background-size: 100% 100%;
-		box-shadow: 1px 2px 10px 10px white;
+		box-shadow: 1px 2px 10px 10px black;
 		animation:slider 9s infinite linear; 
 	}
 	.maindiv2
@@ -92,7 +86,7 @@ $(document).ready(function(){
 		
 		background-image:url('images/otherimages/6.jpg');
 		background-size: 100% 100%;
-		box-shadow: 1px 2px 10px 10px white;
+		box-shadow: 1px 2px 10px 10px black;
 		animation:slider 9s infinite linear; 
 	}
 	.maindiv3
@@ -105,7 +99,7 @@ $(document).ready(function(){
 		top: 560px;
 		background-image:url('images/otherimages/7.jpg');
 		background-size: 100% 100%;
-		box-shadow: 1px 2px 10px 10px white;
+		box-shadow: 1px 2px 10px 10px black;
 		animation:slider 9s infinite linear; 
 
 	}
@@ -119,37 +113,11 @@ $(document).ready(function(){
 		transform:translate(-250%,230%);
 		background-image:url('images/otherimages/4.jpg');
 		background-size: 100% 100%;
-		box-shadow: 1px 2px 10px 10px white;
+		box-shadow: 1px 2px 10px 10px black;
 		animation:slider 9s infinite linear; 
 
 	}
-	.maindiv5
-	{
-		width:13%;
-		height:200px;
-		position: absolute;
-		left: 45.5%;
-		top: -180px;
-		transform:translate(-120%,230%);
-		background-image:url('images/otherimages/5.jpg');
-		background-size: 100% 100%;
-		box-shadow: 1px 2px 10px 10px white;
-		animation:slider 9s infinite linear; 
-	}
-	.maindiv6
-	{
-		width:13%;
-		height:200px;
-		position: absolute;
-		left: 53%;
-		top: -180px;
-		transform:translate(10%,230%);
-		
-		background-image:url('images/otherimages/6.jpg');
-		background-size: 100% 100%;
-		box-shadow: 1px 2px 10px 10px white;
-		animation:slider 9s infinite linear; 
-	}
+	
 	.maindiv7
 	{
 		width:13%;
@@ -170,10 +138,10 @@ $(document).ready(function(){
 		.slideshow{
 
 			margin:auto;
-			padding-top: 150px;
+			padding-top: -550px;
 			height: 700px;
 			box-sizing: border-box;
-			margin-top: 360px;
+			margin-top: 260px;
 
 		}
 		.content
@@ -293,22 +261,7 @@ $(document).ready(function(){
 			transform-origin: center;
 
 		}
-		div.photo:hover img:nth-child(1)
-		{
-			transform:translateY(290px);
-		}
-		div.photo:hover img:nth-child(2)
-		{
-			transform:translateY(-290px);
-		}
-		div.photo:hover img:nth-child(3)
-		{
-			transform:translateY(220px);
-		}
-		div.photo:hover img:nth-child(4)
-		{
-			transform:translateY(-220px);
-		}
+	
 		div.photo:hover img:nth-child(5)
 		{
 			transform:translateY(150px);
@@ -349,22 +302,8 @@ $(document).ready(function(){
 			transform-origin: center;
 
 		}
-		div.photo1:hover img:nth-child(1)
-		{
-			transform:translateY(290px);
-		}
-		div.photo1:hover img:nth-child(2)
-		{
-			transform:translateY(-290px);
-		}
-		div.photo1:hover img:nth-child(3)
-		{
-			transform:translateY(220px);
-		}
-		div.photo1:hover img:nth-child(4)
-		{
-			transform:translateY(-220px);
-		}
+		
+		
 		div.photo1:hover img:nth-child(5)
 		{
 			transform:translateY(150px);
@@ -617,6 +556,249 @@ $(document).ready(function(){
 		{
 			margin-top:350px;
 		}
+		 *
+    {
+      margin:0;
+      padding: 0;
+      box-sizing: border-box;
+
+    }
+   
+    h2
+    {
+      font-size: 2em;
+      color: #333;
+      font-weight: 500;
+      padding-left: 190px;
+      padding-top: 180px;
+    }
+    h2 span
+    {
+        animation: animate 1s linear infinite;
+
+    }
+    h2 span:nth-child(1)
+    {
+      animation-delay: 0s;
+    }
+    h2 span:nth-child(2)
+    {
+      animation-delay: 0.2s;
+    }
+    h2 span:nth-child(3)
+    {
+      animation-delay: 0.4s;
+
+
+    }
+    h2 span:nth-child(4)
+    {
+      animation-delay: 0.8s;
+         padding-left: 20px;
+      
+    }
+    h2 span:nth-child(5)
+    {
+      animation-delay: 1s;
+    }
+    h2 span:nth-child(6)
+    {
+      animation-delay: 1.2s;
+    }
+    h2 span:nth-child(7)
+    {
+      animation-delay: 1.4s;
+    }
+    h2 span:nth-child(8)
+    {
+      animation-delay: 1.6s;
+    }
+     h2 span:nth-child(9)
+    {
+      animation-delay: 1.8s;
+    }
+     h2 span:nth-child(10)
+    {
+      animation-delay: 2s;
+    }
+     h2 span:nth-child(11)
+    {
+      animation-delay: 2.2s;
+      padding-left: 40px;
+
+    }
+     h2 span:nth-child(12)
+    {
+      animation-delay: 2.4s;
+    }
+     h2 span:nth-child(13)
+    {
+      animation-delay: 2.6s;
+    }
+     h2 span:nth-child(14)
+    {
+      animation-delay: 2.8s;
+    }
+     h2 span:nth-child(15)
+    {
+      animation-delay: 3s;
+    }
+     h2 span:nth-child(16)
+    {
+      animation-delay: 3.2s;
+     
+    }
+     h2 span:nth-child(17)
+    {
+      animation-delay: 3.4s;
+     
+    }
+     h2 span:nth-child(18)
+    {
+      animation-delay: 3.6s;
+       padding-left: 40px;
+    }
+     h2 span:nth-child(19)
+    {
+      animation-delay: 3.8s;
+    }
+     h2 span:nth-child(20)
+    {
+      animation-delay: 4s;
+    }
+     h2 span:nth-child(21)
+    {
+      animation-delay: 4.2s;
+    }
+     h2 span:nth-child(22)
+    {
+      animation-delay: 4.4s;
+    }
+     h2 span:nth-child(23)
+    {
+      animation-delay: 4.6s;
+      
+    }
+    h2 span:nth-child(24)
+    {
+      animation-delay: 4.8s;
+      
+    }
+    h2 span:nth-child(25)
+    {
+      animation-delay: 5s;
+      
+    }
+      h2 span:nth-child(26)
+    {
+      animation-delay: 5.2s;
+       padding-left: 40px;
+      
+    }
+      h2 span:nth-child(27)
+    {
+      animation-delay: 5.4s;
+       padding-left: 70px;
+    }
+      h2 span:nth-child(28)
+    {
+      animation-delay: 5.6s;
+      
+    }
+      h2 span:nth-child(29)
+    {
+      animation-delay: 5.8s;
+      
+    }
+      h2 span:nth-child(30)
+    {
+      animation-delay: 6s;
+      
+    }
+      h2 span:nth-child(31)
+    {
+      animation-delay: 6.2s;
+     
+    }
+      h2 span:nth-child(32)
+    {
+      animation-delay: 6.4s;
+       
+      
+    }
+      h2 span:nth-child(33)
+    {
+      animation-delay: 6.6s;
+       padding-left: 40px;
+     
+    }
+      h2 span:nth-child(34)
+    {
+      animation-delay: 6.8s;
+      
+    }
+      h2 span:nth-child(35)
+    {
+      animation-delay: 7s;
+       padding-left: 40px;
+    }
+      h2 span:nth-child(36)
+    {
+      animation-delay: 7.2s;
+      
+    }
+     h2 span:nth-child(37)
+    {
+      animation-delay: 7.4s;
+      
+    }
+     h2 span:nth-child(38)
+    {
+      animation-delay: 7.6s;
+      
+    }
+     h2 span:nth-child(39)
+    {
+      animation-delay: 7.8s;
+      
+    }
+     h2 span:nth-child(40)
+    {
+      animation-delay: 8s;
+       padding-left: 20px;
+      
+    }
+     h2 span:nth-child(41)
+    {
+      animation-delay: 8.2s;
+      
+    }
+     h2 span:nth-child(42)
+    {
+      animation-delay: 8.4s;
+      
+    }
+    @keyframes animate
+    {
+      0%,80%
+      {
+
+        color: #fff;
+        text-shadow: none;
+
+      } 
+      100%
+      {
+        color: #fff;
+        text-shadow: 0 0 10px #fff,
+                    0 0 20px #fff,
+                    0 0 40px #fff,
+                    0 0 80px #fff,
+                    0 0 120px #fff,
+                    0 0 160px #fff;
+       
+      }
+    }
 		/* pjesa e fotove rrotulluese */
 		@keyframes rotar {
 			from {
@@ -637,6 +819,7 @@ $(document).ready(function(){
 </style>
   </head>
   <body>
+  	
     <section class="smarti_free">
 
     		<p class="smart" >
@@ -698,20 +881,58 @@ $(document).ready(function(){
 
 			</div>
 			</td>
-			<td>
+			<td colspan="2">
 
-			<div class="maindiv5">
-		
+			
+				 <h2>
+	 	<div class="teksti">
+	   <span>.</span>
+	    <span>.</span>
+	    <span>.</span>
+	    <span>b</span>
+	   	 <span>e</span>
+	   	 <span>c</span>
+   		 <span>a</span>
+  	 	 <span>u</span>
+  	 	 <span>s</span>
+   		 <span>e</span>
+   		 <span></span>
+   		 <span>e</span>
+   		 <span>v</span>
+   		 <span>e</span>
+   		 <span>r</span>
+   		 <span>y</span>
+   		 <span></span>
+  	 	 <span>p</span>
+  	 	 <span>i</span>
+  	 	 <span>c</span>
+  	 	 <span>t</span>
+  	 	 <span>u</span>
+  	 	 <span>r</span>
+  	 	 <span>e</span>
+  	 	 <span></span>
+  	 	 <br>
+  	 	 <span>t</span>
+  	 	 <span>e</span>
+  	 	 <span>l</span>
+   	 	 <span>l</span>
+   		 <span>s</span>
+   		 <span></span>
+   	 	 <span>a</span>
+   		 <span></span>
+   		 <span>s</span>
+  	 	 <span>t</span>
+  	     <span>o</span>
+  		 <span>r</span>
+   		 <span>y</span>
+		 <span>.</span>
+  		 <span>.</span>
+   	 	 <span>.</span>
+    </h2>
 
-			</div>
+	</div>
 			</td>
-			<td>
-
-			<div class="maindiv6">
-		
-
-			</div>
-			</td>
+			
 			<td>
 
 			<div class="maindiv7">
