@@ -1,4 +1,7 @@
-
+*{
+	margin: 0;
+	padding: 0;
+}
 .border{
 	border-bottom: solid 1px #5C606C;
 	margin-left: 1em;
@@ -7,6 +10,7 @@
   padding-bottom: 1.2em;
 
 }
+
 #canvas{
 	float: left;
 }
@@ -97,8 +101,8 @@ div.ddd{
 .smartphoneicon{
 	clear: both;
 	float: left;
-	height: 60px;
-	width: 60px;
+height: 60px;
+width: 60px;
 
 }
 .outterdiv{
@@ -108,7 +112,7 @@ div.ddd{
 	margin-left: 1em;
 	border-radius: 1.5em;
 	padding: 1em;
-	height: 60em;
+	height: 54em;
 
 
 }
@@ -183,7 +187,6 @@ div.ddd{
 	margin-right: 1em;
 	margin-left: 1em;
 	margin-top: 1em;
-	width: 7em;
 }
 .qqq1{
 	margin-top: 1em;
@@ -192,8 +195,7 @@ div.ddd{
 	color: black;
 	font-style: italic;
 	margin-right: 1em;
-	margin-left: 2em;
-	width: 7em;
+	margin-left: 1em;
 }
 .qqq2{
 	margin-right: 1em;
@@ -203,7 +205,6 @@ div.ddd{
 	font-style: italic;
 	margin-left: 1em;
 	margin-top: 1em;
-	width: 7em;
 }
 .qqq3{
 	margin-right: 1em;
@@ -213,7 +214,6 @@ div.ddd{
 	font-style: italic;
 	margin-left: 1em;
 	margin-top: 1em;
-	width: 7em;
 }
 .zi{
 	border:solid  1px;
@@ -238,11 +238,14 @@ p#shkronja{
 
 
 .eee{
+	margin-left: 0;
 	border-top: solid 1px #ABABAB;
 	color: #686868;
 	clear: both;
 	margin-top: 2em;
 	padding: 2em;
+	padding-left: 0em;
+	padding-right: 1em;
 	border-bottom: solid 1px #ABABAB;
 	height: 5em;
 float: right;
@@ -251,7 +254,14 @@ float: right;
 canvas#majtas{
 	float: left;
 }
-canvas#djathtas{
+canvas#myCanvas1{
+	float: right;
+
+}
+div#djathtas{
+	float: right;
+}
+td#djathtas{
 	float: right;
 }
 p#qwe{
@@ -261,6 +271,7 @@ p#qwe{
 }
 div#sub{
 	float: left;
+	padding-right: 8em;
 }
 div#email{
 	float: right;
@@ -273,22 +284,24 @@ div#email{
 }
 
 p.sub {
-	padding-left: 2em;
+	padding-left: 1.5em;
 	font-size: 3em;
 	font-style: italic;
 	font-weight: bold;
 }
 p.miss{
-	padding-left: 2.3em;
-	font-size: 1.3em;
+	padding-left: 0em;
+	font-size: 1.4em;
 }
 
 .emaili{
+
+	margin-left: 9em;
 	font-size: 1.2em;
 	border: solid 1px #ABABAB;
 	padding: 0.5em;
 	background-color: #dddddd;
-	border-radius: 5px;
+	border-radius: 7px;
 	width: 20em;
 }
 .signupi{
@@ -296,7 +309,7 @@ p.miss{
 	color: #B86366;
 	width: 8em;
 	height: 3.2em;
-	border-radius: 5px;
+	border-radius: 7px;
 	margin-left: 1em;
 	text-transform: uppercase;
 	font-weight: bold;
@@ -310,15 +323,27 @@ body{
 	color: #FFFEFF;
 	/*position: absolute;*/
 }
+td#cell{
+	width: 35%;
+	height: 35%;
+	align-content: center;
+
+}
+footer{
+	padding-top: 1em;
+	margin-top: 1em;
+}
 .footer-panel{
 	width:22%;
 	display: inline-block;
 	vertical-align: top;
 	padding-left:20px;
 
+
 }
 .footer-content{
 	color:grey;
+
 }
 .footer-title{
 	margin-bottom:15px;
@@ -345,7 +370,7 @@ footer
 .footer-bottom
 {
 	margin-top:25px;
-	border-top:solid 1px #5C606C;
+	border-top:1px solid grey;
 	padding-top:15px;
 	margin-left: 1em;
 	margin-right: 1em;
@@ -362,14 +387,13 @@ span#shigjeta{
 }
 a.linket:hover{
 	color: #FCFFFF;
-	border: none;
-}
+border: none;}
 #contacti{
 	padding-bottom: 1em;
 }
 #tedhenat{
 	padding-top: 2em;
-	color:grey;
+		color:grey;
 }
 #paragrafet{
 	padding-top: 1.4em;
@@ -382,7 +406,7 @@ img.facebookii{
 }
 #fcb{
 	padding-left: 1.3em;
-	color:grey;
+			color:grey;
 
 }
 img.facebookii:hover{
