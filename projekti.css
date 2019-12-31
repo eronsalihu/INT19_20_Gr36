@@ -416,7 +416,7 @@ img.facebookii:hover{
 	transition: width 3s,height 3s;
 }
 /*dropdown_menu*/
-/*
+
 li a.dropdbtn.dropdown{
 	display: inline-block;
 	text-align: center;
@@ -453,4 +453,4 @@ background-color: :#1F2531;
 }
 .dropdown:hover .dropdown-content{
 	display: block;
-}*/
+}
