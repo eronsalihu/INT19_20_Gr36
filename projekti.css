@@ -337,7 +337,7 @@ footer{
 	display: inline-block;
 	vertical-align: top;
 	padding-left:20px;
-
+margin-right: 1em;
 
 }
 .footer-content{
@@ -345,9 +345,16 @@ footer{
 
 }
 .footer-title{
-	margin-bottom:15px;
+	margin-bottom:18px;
 }
 .footer-content li{
+	list-style-type:none;
+	border-bottom: 1px solid grey;
+	padding:5px 0px;
+	font-size:20px;
+	padding-top: 10px
+}
+.footer-content-socials li{
 	list-style-type:none;
 	border-bottom: 1px solid grey;
 	padding:5px 0px;
@@ -396,7 +403,7 @@ border: none;}
 		color:grey;
 }
 #paragrafet{
-	padding-top: 1.4em;
+	padding-top: 1.5em;
 }
 img.facebookii{
 	width: 2.2em;
