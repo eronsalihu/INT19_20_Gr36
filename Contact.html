@@ -64,6 +64,14 @@ var charactersLeft = 0;
   	   charactersLeft = $("textarea[name='message']").attr("size");
   	   $("#char-left").text(charactersLeft);
   	});
+$("#contactForm").submit(function(){
+  		try {
+  		//console.acceptd();
+			if($('input[name ="terms"]').prop("checked") == false)
+		  	{
+		  		alert("You must accept terms and conditions")
+				return false;
+	  		}
         <div class="footer-bottom">
           <span>Copyright © 2019</span>
           <span style="float:right"> Template by css templates </span>
