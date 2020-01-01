@@ -104,6 +104,24 @@ $("#contactForm").submit(function(){
 		}
   	});
 
-
+$("textarea[name='message']").keydown(function(e){
+  		if(e.keyCode == 8)
+  		{
+  			charactersLeft++;
+  			$("#char-left").text(charactersLeft);
+  		}
+  		else
+  		{
+  			if(charactersLeft > 0)
+  			{
+  				charactersLeft--;
+  				$("#char-left").text(charactersLeft);
+  			}
+	  		else
+	  		{
+	  			return false;
+	  		}
+  		}
+  	});
  
 </html>
