@@ -123,5 +123,26 @@ $("textarea[name='message']").keydown(function(e){
 	  		}
   		}
   	});
- 
+  </script>
+  <script>
+  	var contacts = ['Dave', 'Alice', 'Bob'];
+  	var emails = ['dave@smartapp.com','alice@smartapp.com','bob@smartapp.com'];
+
+  	var contactObject = [];
+  	for(var i = 0; i<contacts.length; i++)
+  	{
+  		var obj = {
+  			name:contacts[i],
+  			email:emails[i]
+  		};
+  		contactObject.push(obj);
+  	}
+  	var ul = '<ul>';
+    for(var i = 0; i<contactObject.length; i++) 
+    {            
+    	ul = ul + '<li><b>'+contactObject[i].name+'</b> <i>'+contactObject[i].email+'</i></li>';         
+    }
+    ul = ul + '</ul>';     
+    $("#contact-list").html(ul);
+  </script>
 </html>
