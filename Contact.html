@@ -59,6 +59,11 @@ function validateEmail(email) {
 	    var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 	    return re.test(String(email).toLowerCase());
 	}
+var charactersLeft = 0;
+  	$( document ).ready(function() {
+  	   charactersLeft = $("textarea[name='message']").attr("size");
+  	   $("#char-left").text(charactersLeft);
+  	});
         <div class="footer-bottom">
           <span>Copyright © 2019</span>
           <span style="float:right"> Template by css templates </span>
