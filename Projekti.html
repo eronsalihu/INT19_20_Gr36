@@ -407,4 +407,11 @@ Post Code: 10000 <br>
 	</div>
 </footer>
 </body>
+<script type="text/javascript">
+  var currentDate = new Date();
+  var currentHour = currentDate.getHours();
+  if(currentHour >= 8 || currentHour <= 18)
+  {
+    document.body.style.background = '#A3A2A0';
+  }
 </html>
