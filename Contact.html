@@ -72,7 +72,19 @@ $("#contactForm").submit(function(){
 		  		alert("You must accept terms and conditions")
 				return false;
 	  		}
-        <div class="footer-bottom">
+                        if(!validateEmail($('input[name="email"]').val()))
+	  		{
+	  			alert("Email is not valid!");
+	  			return false;
+	  		}
+	  		alert("Message Sent!");
+  		}
+
+
+
+
+
+  <div class="footer-bottom">
           <span>Copyright © 2019</span>
           <span style="float:right"> Template by css templates </span>
            <p>This is a W3C standards compliant free Psd
