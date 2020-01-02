@@ -5,17 +5,67 @@
     <title>Style Demo/Smart_App</title>
     <link rel="stylesheet" type="text/css" href="reset.css">
   <link rel="stylesheet" type="text/css" href="projekti.css">
+  <script src="jquery-1.11.2.min.js"></script>
+  <script>
+  $(document).ready(function(){
+    $("button").click(function(){
+      $(".ffoto1").fadeToggle();
+
+    });
+    $("#btn2").click(function(){
+      $(".ffoto1").fadeiIn("fast");
+    });
+     $("#btn3").click(function(){
+
+      $(".ffoto1").fadeiOut(3000);
+    });
+  });
+  </script>
   <style >
 div.fotoja1{
+
   text-align: center;
   margin-right: 10em;
 }
 img.ffoto1{
-  margin-top: 5em;
+  margin-top: 2em;
   border-radius: 10px;
   display: block;
   margin-left: 2em;;
   margin-right: 2em;
+  box-shadow: 2px 2px 7px 1px #1C6EA4;
+  text-shadow: 1px 2px 2px #1C6EA4;
+
+}
+div.butonat{
+  margin-top: 5em;
+  margin-left: 13em;
+  margin-right: auto;
+}
+button{
+  margin-left: 0.8em;
+  margin-right: 0.8em;
+  border-radius: 12px;
+  padding: 5px;
+  font-size: 0.8em;
+  font-family:wide latin;
+  color:#24292E;
+  background-color: #D6D5D0;
+  box-shadow: 2px 2px 7px 1px #1C6EA4;
+
+}
+div.lajmet{
+  width: 24em;
+  height: 31em;
+background-color: #ffffff;
+margin-top: 5em;
+margin-right: 1em;
+margin-left: 1em;
+border-radius: 1.5em;
+padding: 1em;
+margin-left: 2em;
+margin-right: 2em;
+
 
 }
   </style>
@@ -44,6 +94,12 @@ img.ffoto1{
             <p class="border"></p>
         </header>
 <div class="fotoja1">
+  <div class="butonat">
+
+  <button>Toggle Effect</button>
+  <button id="btn2">Fade in the figures</button>
+  <button id="btn3">Fade out the figures</button>
+    </div>
 <table>
 <tr>
   <td>
@@ -58,7 +114,23 @@ img.ffoto1{
 </tr>
 </table>
 </div>
-        <div class="footer-bottom">
+<table>
+  <tr>
+<td>
+<div class="lajmet">
+</div>
+</td>
+<td>
+<div class="lajmet">
+</div>
+</td>
+<td>
+<div class="lajmet">
+</div>
+</td>
+</tr>
+</table>
+ <div class="footer-bottom">
           <span>Copyright © 2019</span>
           <span style="float:right"> Template by css templates </span>
         </div>
