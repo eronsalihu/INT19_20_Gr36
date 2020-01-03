@@ -97,8 +97,27 @@ p.b{
   font-size: 1.7em;
 text-shadow: 1px 2px 2px #1C6EA4;
 }
+.booxi {
+  margin-top: 1em;
+  margin-left: 2em;
+  padding: 12px;
+  background-image: url(backi1.jpg);
+  width: 21em;
+  height: 15em;
+  border-radius: 12px;
+}
+
+.booxi1 {
+  margin-top: 1em;
+  margin-left: 5em;
+  padding: 12px;
+  background-image: url(backi2.jpg);
+  width: 21em;
+  height: 15em;
+  border-radius: 12px;
+}
 video{
-  margin-left: 30em;
+  margin-left: 5em;
   margin-top: 2em;
   border-radius: 10px;
   width: 30em;
@@ -110,14 +129,82 @@ text-shadow: 1px 2px 2px #1C6EA4;
   padding-left: 2em;
   padding-right: 2em;
   margin-left: 2em;
+border: 1px solid #DED2CA;
+margin-top: 0.5em;
+margin-right: 48em;
+font-size: 1em;
+color: #68D1FF;
+border-radius: 10px;
 }
 .vlereso{
   font-size: 1.3em;
   margin-top: 2em;
-  margin-left: 1.2em;
+  margin-left: 2em
+  margin-right:12em;
   color: #F1E9C2;
   font-family: rockwell;
 }
+.boxes {
+  margin-top: 1em;
+  padding: 50px;
+  background: #484848;
+  width: 15em;
+  border-radius: 20%
+}
+
+
+input[type="checkbox"] { display: none; }
+
+input[type="checkbox"] + label {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 20px;
+  font: 14px/20px 'Open Sans', Arial, sans-serif;
+  color: #ddd;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+
+input[type="checkbox"] + label:last-child { margin-bottom: 0; }
+
+input[type="checkbox"] + label:before {
+  content: '';
+  display: block;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #6cc0e5;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: .6;
+  -webkit-transition: all .12s, border-color .08s;
+  transition: all .12s, border-color .08s;
+}
+
+input[type="checkbox"]:checked + label:before {
+  width: 10px;
+  top: -5px;
+  left: 5px;
+  border-radius: 0;
+  opacity: 1;
+  border-top-color: transparent;
+  border-left-color: transparent;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.h11
+{
+  padding: 0.7em;
+  color: #FF603B;
+}
+p.pp{
+  padding: 0.7em;
+  color: #CC0000;
+}
+
   </style>
   </head>
   <body>
@@ -231,17 +318,63 @@ Finally, use the Google Assistant, Amazon Alexa, or one of the SmartThings apps 
 </td>
 </tr>
 </table>
+<table>
+  <tr>
+    <td>
+<div class="booxi">
+<h1 class="h11">Technology allows us to do lots of things easier</h1>
+<p class="pp">Using educational technology for drill and practice of basic skills can be highly effective according to
+   a large body of data and a long history of use (Kulik, 1994).
+   Students usually learn more, and learn more rapidly, in courses that use computer assisted instruction (CAI)</p>
+</div>
+    </td>
+<td>
 <video src="videojaa.mp4" autoplay controls>
-
 </video>
+</td>
+<td>
+<div class="booxi1">
+<h1 class="h11">Applications of Technology to Advanced Skills</h1>
+<p class="pp">The application of educational technologies to instruction has progressed beyond the use of basic drill and practice software,
+   and now includes the use of complex multimedia products and advanced networking technologies.
+   Today, students use multimedia to learn interactively and work on class projects. </p>
+</div>
+</td>
+<tr>
+</table>
+<table>
+  <tr>
+    <td>
 <h1 class="vlereso"><big>Vlerso punen e bere:</big></h1>
 <form class="format" action="" method="get" >
-  <input type="radio" name="vlersimi" value="1" class="vlerso" onclick="alert('Faleminderit per vlersimin')"> <big>1</big> </value>
-  <input type="radio" name="vlersimi" value="2" class="vlerso" onclick="alert('Faleminderit per vlersimin')"> <big>2</big></value>
-  <input type="radio" name="vlersimi" value="3" class="vlerso" onclick="alert('Faleminderit per vlersimin')"> <big>3</big></value>
-  <input type="radio" name="vlersimi" value="4" class="vlerso" onclick="alert('Faleminderit per vlersimin')"> <big>4</big></value>
-  <input type="radio" name="vlersimi" value="5" class="vlerso" onclick="alert('Faleminderit per vlersimin')"> <big>5</big></value>
+<div class="vlerso">
+  <input type="radio" name="vlersimi" value="1" onclick="alert('Faleminderit per vlersimin')"> <big>1 Yll(I vetem)</big> </value><br>
+  </div>
+  <div class="vlerso">
+  <input type="radio" name="vlersimi" value="2"  onclick="alert('Faleminderit per vlersimin')"> <big>2 Yje(Dobet)</big></value><br> </div>
+  <div class="vlerso">
+  <input type="radio" name="vlersimi" value="3"  onclick="alert('Faleminderit per vlersimin')"> <big>3 Yje(Mire)</big></value><br></div>
+  <div class="vlerso">
+  <input type="radio" name="vlersimi" value="4"  onclick="alert('Faleminderit per vlersimin')"> <big>4 Yje(Shume mire)</big></value><br></div>
+  <div class="vlerso">
+  <input type="radio" name="vlersimi" value="5"  onclick="alert('Faleminderit per vlersimin')"> <big>5 Yje(Shkelqyeshem)</big></value><br><div>
 </form>
+</td>
+<td id="checkii">
+<h1 class="vlereso">Qfare te pelqen ne punen tone:</h1>
+<div class="boxes">
+  <input type="checkbox" id="box-1">
+  <label for="box-1">Stili Punes</label>
+
+  <input type="checkbox" id="box-2" >
+  <label for="box-2">Informacionet </label>
+
+  <input type="checkbox" id="box-3">
+  <label for="box-3">Renditja</label>
+</div>
+</td>
+</tr>
+</table>
  <div class="footer-bottom">
           <span>Copyright © 2019</span>
           <span style="float:right"> Created by FIEK Students </span>
