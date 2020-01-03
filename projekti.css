@@ -443,8 +443,8 @@ li a.dropdbtn.dropdown{
 	display: none;
 	position: absolute;
 	background:#B86366;
-	min-width: 130px;
-	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0,2);
+	width: 130px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0,10);
 
 }
 .dropdown-content a{
