@@ -114,7 +114,6 @@ width: 60px;
 	padding: 1em;
 	height: 54em;
 
-
 }
 .innerdiv1{
 	background-color: #B86366;
@@ -175,6 +174,10 @@ width: 60px;
 	width: 150px;
 	text-align: center;
 	font-size: 32px;
+}
+a#dropdowmi:hover{
+color: #ffffff;
+font-family: wide latin;
 }
 .innerdivv{
 	clear: both;
@@ -352,7 +355,7 @@ margin-right: 1em;
 	border-bottom: 1px solid grey;
 	padding:5px 0px;
 	font-size:20px;
-	padding-top: 10px
+	padding-top: 5px
 }
 .footer-content-socials li{
 	list-style-type:none;
@@ -438,13 +441,16 @@ li a.dropdbtn.dropdown{
  	display: inline-block;
 
  }
+ .canvasi123{
+margin-left: 30em;
+ }
 .dropdown-content{
 	margin-top: 1em;
 	display: none;
 	position: absolute;
 	background:#B86366;
-	width: 130px;
-	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0,10);
+	min-width: 130px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0,2);
 
 }
 .dropdown-content a{
