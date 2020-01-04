@@ -364,7 +364,7 @@ Finally, use the Google Assistant, Amazon Alexa, or one of the SmartThings apps 
 </td>
 <td>
 <div class="booxi1">
-<h1 class="h11">Applications of Technology to Advanced Skills</h1>
+<h1 class="h11" id="demo">Applications of Technology to Advanced Skills</h1>
 <p class="pp">The application of educational technologies to instruction has progressed beyond the use of basic drill and practice software,
    and now includes the use of complex multimedia products and advanced networking technologies.
    Today, students use multimedia to learn interactively and work on class projects. </p>
@@ -399,6 +399,7 @@ Finally, use the Google Assistant, Amazon Alexa, or one of the SmartThings apps 
 
   <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
     <img src="backi1.jpg" draggable="true" ondragstart="drag(event)" id="drag1" width="88" height="31">
+
   </div>
 
   <div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
@@ -419,6 +420,18 @@ Finally, use the Google Assistant, Amazon Alexa, or one of the SmartThings apps 
 </td>
 </tr>
 </table>
+
+<p>Replace "technology" with "Internet" in the paragraph of the white photo background:</p>
+
+<button onclick="myFunction()">Try it</button>
+
+<script>
+function myFunction() {
+  var str = document.getElementById("demo").innerHTML;
+  var txt = str.replace(/technology/i,"Internet");
+  document.getElementById("demo").innerHTML = txt;
+}
+</script>
  <div class="footer-bottom">
           <span>Copyright © 2019</span>
           <span style="float:right"> By:Computer Engineering Students </span>
