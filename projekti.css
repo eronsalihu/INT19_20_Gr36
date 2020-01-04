@@ -473,3 +473,8 @@ border-radius: 5px;
 background:transparent;
 border:none;
 }
+form{
+margin-top:50px;
+transition: all 4s ease-in-out;
+
+}
