@@ -499,3 +499,8 @@ form-control{
 input {
 	height :20px;
 }
+form .submit{
+background: #9A1844;
+border-color:transparent;
+font-size:20px;
+}
