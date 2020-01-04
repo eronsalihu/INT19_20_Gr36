@@ -496,4 +496,6 @@ form-control{
 	border:none;
 	border-bottom:4px solid pink;
 }
-
+input {
+	height :20px;
+}
