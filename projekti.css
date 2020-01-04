@@ -472,6 +472,9 @@ border-radius: 5px;
  width:600px;
 background:transparent;
 border:none;
+outline: none;
+border-bottom: 1px pink;
+margin-bottom: 15px;
 }
 form{
 margin-top:50px;
