@@ -29,7 +29,12 @@ $(document).ready(function(){
 });
 </script>
  
-
+<script type="text/javascript">
+	function buttonclick()
+	{
+		window.location="https://magazine.artland.com/gallery-sign-up/";
+	}
+</script>
   <style >
 	body
 	{
@@ -705,7 +710,7 @@ $(document).ready(function(){
 
    	 width: 380px;
 	 height: 480px;
-   	background-color: grey;
+   	background-color: #F58B5E;
 	margin-top: 20px;
    	margin-right: 1em;
 	margin-left: 1em;
@@ -715,7 +720,9 @@ $(document).ready(function(){
 	margin-right: 2em;
 	color: black;
 	text-align: center;
-	
+
+
+
     }
 
     .tabelanefund
@@ -729,16 +736,95 @@ $(document).ready(function(){
     .firstphoto
     {
     	border-radius: 40px;
-    	border:1px black;
-		border-style: dotted;
     }
     h3.firsttitle
     {
-
     	margin-top: 5px;
     	font-size: 25px;
     	margin-bottom: 30px;
     }
+    div.butonat
+    {
+    	height: 180px;
+    	width: 500px;
+    	border-radius: 90px;
+    	background-color: grey;
+    	color: black;
+    	text-align: center;
+    	margin-right: 1px;
+    	margin-left: 150px;
+    	margin-top: 150px;
+
+    }
+    h3.butoni1
+    {
+    	padding-top: 40px;
+    	color: black;
+    	padding-bottom: 20px;
+
+    	
+    }
+    input.button
+    {
+    	height: 40px;
+    	width: 150px;
+    	background-color: #1F2531;
+    	color: white;
+    	border-radius: 20px;
+    	font-size: 15px;
+    	transition: .6s;
+    	overflow: hidden;
+    }
+
+    input.button:focus
+    {
+    	outline: none;
+    }
+ 	input.button:before
+ 	{
+ 		content:'';
+ 		display: block;
+ 		background:rgba(255,255,255,.5);
+ 		width: 60px;
+ 		height: 100%;
+ 		opacity: .5;
+ 		filter: blur(30px);
+ 		transform:translateX(-130px) skewX(-15deg);
+ 	}
+ 	input.button:after
+ 	{
+ 		content: '';
+ 		display: block;
+ 		position: absolute;
+ 		background: rgba(255,255,255,.2);
+ 		width: 30px;
+ 		height:100%;
+ 		opacity: 0;
+ 		filter:blur(30px);
+ 		transform: translate(-100px) scaleX(-15deg);
+ 	}
+
+    input.button:hover
+    {
+		background: purple;
+		cursor: pointer;
+    }
+
+    input.button:hover:before
+    {
+    	transform: translateX(300px) skewX(-15deg);
+    	opacity: .6;
+    	transition: 2s;
+    }
+
+     input.button:hover:after
+    {
+    	transform: translateX(300px) skewX(-15deg);
+    	opacity: 1;
+    	transition: 2s;
+    }
+
+
 
      @keyframes animate
     {
@@ -1041,7 +1127,28 @@ shot lasted 8 Hours. That’s the picture above.
 				</td>
 			</tr>
 		</table>
-	
+	<table>
+		<tr>
+			<td >
+				<div class="butonat">
+				Vlereso
+			</div>
+
+			<td >
+
+
+				<div class="butonat">
+				<h3 class="butoni1"> If you make a lot of photos every day and want to share them with us and also get a lot of amazing photos , register now :
+				</h1>
+				<br>
+				<input class="button" type="button" value="Register" onclick="buttonclick()">
+			</div>
+			</td>
+			
+			
+			
+		</tr>
+	</table>
         <div class="footer-bottom">
          
            
