@@ -495,6 +495,10 @@ form-control{
 	background: transparent;
 	border:none;
 	border-bottom:4px solid pink;
+        font-size:15px;
+	color:white;
+	margin bottom:15px;
+
 }
 input {
 	height :20px;
