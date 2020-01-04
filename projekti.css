@@ -468,3 +468,8 @@ border-radius: 5px;
 	display: block;
 	border-radius: 5px;
 }
+.innerdiv{
+ width:600px;
+background:transparent;
+border:none;
+}
