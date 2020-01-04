@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html manifest="index.appcache">
+<html>
 <head>
 	<title>Smart App</title>
 	<link rel="stylesheet" type="text/css" href="projekti.css">
@@ -104,6 +104,20 @@ $(document).ready(function(){
 </head>
 
 <style>
+#newspaper {
+  /* Old Chrome, Safari, Opera */
+  -webkit-column-count: 2;
+  -webkit-column-width: 30px;
+
+  /* Old Firefox */
+  -moz-column-count: 2;
+  -moz-column-width: 30px;
+
+  /* Statndard syntax */
+  column-count: 2;
+  column-width: 30px;
+}
+</style>
 #panel,#flip
 {
 padding:5px;
@@ -147,9 +161,9 @@ display:none;
            <li><a href="Contact.html">Full Width</a></li>|
            <li class="dropdown"><a class="dropdbtn" >Dropdown</a>
            	<div class="dropdown-content">
-           		<a  href="https://www.smartthings.com/" target="_blank"> Smart Things</a>
-           		<a  href="https://smartapp.io/" target="_blank">Smart App</a>
-           		<a  href="https://www.apple.com/ios/app-store/" target="_blank"> App Store</a>
+           		<a id="dropdowmia" href="https://www.smartthings.com/" target="_blank"> Smart Things</a>
+           		<a id="dropdowmai" href="https://smartapp.io/" target="_blank">Smart App</a>
+           		<a id="dropdowmia" href="https://www.apple.com/ios/app-store/" target="_blank"> App Store</a>
 							<a id="dropdowmia" href="https://play.google.com/" target="_blank">Play Store</a>
            	</div></li>|
            <li><a href="Gallery.html" >Gallery</a></li>
@@ -196,7 +210,7 @@ display:none;
 		<div >
 		<div class="qqq" >
 			<h1 id="benefi"><span class="zi"></span> &nbsp Simple Setup</h1>
-		<p id="shkronja">Getting started is easy with a Samsung Account. Once you have created your SmartThings profile,
+		<p id="shkronja">Getting started is easy with a Samsung Account. Once you've created your SmartThings profile,
 
 
 </p>
@@ -357,9 +371,13 @@ display:none;
 
 	<div class="footer-panel">
 		<div class="footer-title">FROM THE BLOG</div>
-		<div class="footer-content">
+		<div class="footer-content" id="newspaper">
 			<h3>Blog Post Title</h3><br>
-			<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry . Lorem Ipsum has been the industry's standard dummy text ever since the 1500s , when an unknown printer took a gallery of type and scrambled it to make a type specimen book . It has survived not only five centuries , but also the leap into electronic typesetting , remaining essentially unchanged . It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages , and more recently with desktop publishing software like Aldus PageMaker including versions of Lo</p>
+			<p> <mark>Lorem Ipsum</mark> is simply dummy text of the printing and typesetting industry . Lorem Ipsum has been the industry's
+				 standard dummy text ever since the 1500s , when an unknown printer took a gallery of type and scrambled it to make
+				  a type specimen book . It has survived not only five centuries , but also the leap into electronic typesetting ,
+					 remaining essentially unchanged . It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages ,
+					  and more recently with desktop publishing software like <abbr title="Aldus PageMaker">  AP </abbr>including versions of Lo</p>
 
 		<a href="https://loremipsum.de/" target="_blank"><p id="read">Read more<span id="shigjeta">>></span> </p></a>
 		</div>
@@ -415,6 +433,14 @@ Post Code: 10000 <br>
 			</ul>
 		</div>
 	</div>
+
+	<!--
+	Definition list
+	<dl class="">
+		<dt>DD ne distance 0</dt>
+		<dd>Me nje distance tab</dd>
+	</dl>
+	-->
 
 	<div class="footer-bottom">
 		<span style="float:left">Copyright © 2019</span>
