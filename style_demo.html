@@ -21,8 +21,26 @@
     });
   });
 
+  function allowDrop(ev) {
+    ev.preventDefault();
+  }
+
+  function drag(ev) {
+    ev.dataTransfer.setData("text", ev.target.id);
+  }
+
+  function drop(ev) {
+    ev.preventDefault();
+    var data = ev.dataTransfer.getData("text");
+    ev.target.appendChild(document.getElementById(data));
+  }
+
   </script>
   <style >
+  *{
+    margin: 0;
+    padding: 0;
+  }
 div.fotoja1{
 
   text-align: center;
@@ -106,6 +124,14 @@ text-shadow: 1px 2px 2px #1C6EA4;
   height: 15em;
   border-radius: 12px;
 }
+#div1, #div2 {
+  float: left;
+  width: 100px;
+  height: 35px;
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid black;
+}
 
 .booxi1 {
   margin-top: 1em;
@@ -115,6 +141,10 @@ text-shadow: 1px 2px 2px #1C6EA4;
   width: 21em;
   height: 15em;
   border-radius: 12px;
+}
+.dragii{
+  margin-left: 5em;
+  margin-right: 10em;
 }
 video{
   margin-left: 5em;
@@ -131,7 +161,7 @@ text-shadow: 1px 2px 2px #1C6EA4;
   margin-left: 2em;
 border: 1px solid #DED2CA;
 margin-top: 0.5em;
-margin-right: 48em;
+margin-right: 7em;
 font-size: 1em;
 color: #68D1FF;
 border-radius: 10px;
@@ -222,9 +252,9 @@ p.pp{
             <nav id="mainMenu">
                <ul class="lista">
                  <li><a href="index.html">Home</a></li>|
-                 <li><a href="style_demo.html" class="active">Style Demo</a></li>|
+                 <li><a href="#" class="active">Style Demo</a></li>|
                  <li><a href="Contact.html">Full Width</a></li>|
-                 <li class="dropdown"><a class="dropdbtn" >Dropdown</a>
+                 <li class="dropdown"><a href="Drop_Down.html" class="dropdbtn" >Dropdown</a>
             <div class="dropdown-content">
               <a id="dropdowmia" href="https://www.smartthings.com/" target="_blank"> Smart Things</a>
               <a id="dropdowmai" href="https://smartapp.io/" target="_blank">Smart App</a>
@@ -360,8 +390,22 @@ Finally, use the Google Assistant, Amazon Alexa, or one of the SmartThings apps 
   <input type="radio" name="vlersimi" value="5"  onclick="alert('Faleminderit per vlersimin')"> <big>5 Yje(Shkelqyeshem)</big></value><br><div>
 </form>
 </td>
+<td>
+  <div class="dragii">
+
+
+  <h2 class="vlereso">Drag and Drop</h2>
+  <p>Drag the image back and forth between the two div elements.</p>
+
+  <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
+    <img src="backi1.jpg" draggable="true" ondragstart="drag(event)" id="drag1" width="88" height="31">
+  </div>
+
+  <div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+  </div>
+</td>
 <td id="checkii">
-<h1 class="vlereso">Qfare te pelqen ne punen tone:</h1>
+<h1 class="vlereso">&Ccedilfar&euml t&euml p&eumllqen n&euml pun&eumln ton&euml:</h1>
 <div class="boxes">
   <input type="checkbox" id="box-1">
   <label for="box-1">Stili Punes</label>
@@ -377,7 +421,7 @@ Finally, use the Google Assistant, Amazon Alexa, or one of the SmartThings apps 
 </table>
  <div class="footer-bottom">
           <span>Copyright © 2019</span>
-          <span style="float:right"> Created by FIEK Students </span>
+          <span style="float:right"> By:Computer Engineering Students </span>
         </div>
   </body>
 </html>
