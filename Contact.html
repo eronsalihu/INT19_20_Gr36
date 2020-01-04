@@ -1,10 +1,53 @@
 <!DOCTYPE html>
-<html manifest="Contact.appcache">
+<html >
   <head>
     <meta charset="utf-8">
     <title>Full Width/Smart_App</title>
     <link rel="stylesheet" type="text/css" href="reset.css">
   <link rel="stylesheet" type="text/css" href="projekti.css">
+<style >
+
+
+.wrapper {
+display: grid;
+grid-template-columns: 140px 140px 140px;
+grid-gap: 10px;
+color: #444;
+margin-left: 36em;
+
+}
+.checkbox{background-color:#fff;display:inline-block;height:28px;margin:0 .25em;width:28px;border-radius:4px;border:1px solid #ccc;+}
+ .checkbox span{display:block;height:28px;position:relative;width:28px;padding:0}
+ .checkbox span:after{-moz-transform:scaleX(-1) rotate(135deg);-ms-transform:scaleX(-1)rotate(135deg);
+    -webkit-transform:scaleX(-1) rotate(135deg);transform:scaleX(-1) rotate(135deg);
+    -moz-transform-origin:left top;
+    -ms-transform-origin:left top;
+    -webkit-transform-origin:left top;
+    transform-origin:left top;
+    border-right:4px solid #fff;border-top:4px solid #fff;
+    content:'';
+    display:block;height:20px;
+    left:3px;position:absolute;top:15px;width:10px}
+    .checkbox span:hover:after{border-color:#999}
+  .checkbox input{display:none}
+  .checkbox input:checked + span:after{-webkit-animation:check .8s;-moz-animation:check .8s;-o-animation:check .8s;animation:check .8s;border-color:#555}
+.checkbox input:checked + .default:after{border-color:#444}
+
+.box {
+background-color: #444;
+color: #fff;
+border-radius: 5px;
+padding: 20px;
+font-size: 150%;
+}
+h1#h111{
+  color: #444;
+  margin-top: 0.2em;
+  margin-bottom: 0.2em;
+  font-size: 1.7em;
+
+}
+</style>
   </head>
   <body>
     <section class="smarti_free">
@@ -39,9 +82,9 @@
  <div class="innerdivv" style="margin-left: 1em;">
         	<form id="contactForm" action="mailto:info@smartapp.com" method="post" enctype="text/plain">
         		Name:<br>
-        		<input type="text" name="name" required="" id="firstName" class="form-control" style="">
-            <button type="button" class="save" id="signupi">Save Name</button>
-      <button type="button" class="access" id="signupi" >Get Name</button><br>
+        		<input type="text" name="name" required="" id="firstName">
+            <button type="button" class="save">Save Name</button>
+      <button type="button" class="access">Get Name</button><br>
 
         		E-mail:<br>
             <input type="text" name="email"class="form-control" required=""><br>
@@ -58,16 +101,32 @@
         		<input type="submit" class="form-control submit" value="Send">
 	     	</form>
 		    </div>
+<h1 id="h111">Preferencat e juaja</h1>
+        <div class="wrapper">
+      <div class="box a"><label class="checkbox"> <input type="checkbox" name="" value="" onclick="alert('Zgjedhje e bukur')"><span class="default"></span></label><br> Apple</div>
+      <div class="box b"><label class="checkbox"><input type="checkbox" name="" value="" onclick="alert('Zgjedhje e bukur')"> <span class="default"></span></label><br>Samsung</div>
+      <div class="box c"><label class="checkbox"><input type="checkbox" name="" value="" onclick="alert('Zgjedhje e bukur')"><span class="default"></span></label><br> Xiaomi </div>
+      <div class="box d"><label class="checkbox"><input type="checkbox" name="" value="" onclick="alert('Zgjedhje e bukur')"><span class="default"></span></label><br> Huawei </div>
+      <div class="box e"><label class="checkbox"><input type="checkbox" name="" value="" onclick="alert('Zgjedhje e bukur')"><span class="default"></span></label><br> Sony Erixon </div>
+      <div class="box f"><label class="checkbox"><input type="checkbox" name="" value="" onclick="alert('Zgjedhje e bukur')"><span class="default"></span></label><br> BlackBerry</div>
+    </div>
 		    <div id="contact-list">
 
 		    </div>
 	       <div class="footer-bottom">
                <span>Copyright © 2019</span>
+               <span style="float:right"> Template by css templates </span>
+               <p>This is a W3C standards compliant free Psd
+               website template from OS Templates .This template is distributed
+               using a Website Template License .
+               For more free PSD templates visit OS-Templates.com <p>
                </div>
 
 	  </div>
+
             </body>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <script>
 function validateEmail(email) {
 	    var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
