@@ -39,7 +39,10 @@
  <div class="innerdivv" style="margin-left: 1em;">
         	<form id="contactForm" action="mailto:info@smartapp.com" method="post" enctype="text/plain">
         		Name:<br>
-        		<input type="text" name="name" required=""><br>
+        		<input type="text" name="name" required="" id="firstName">
+            <button type="button" class="save">Save Name</button>
+      <button type="button" class="access">Get Name</button><br>
+
         		E-mail:<br>
             <input type="text" name="email" required=""><br>
         		Gender:<br>
@@ -56,20 +59,21 @@
 	     	</form>
 		    </div>
 		    <div id="contact-list">
-			
+
 		    </div>
 	       <div class="footer-bottom">
                <span>Copyright © 2019</span>
                <span style="float:right"> Template by css templates </span>
                <p>This is a W3C standards compliant free Psd
-               website template from OS Templates .This template is distributed 
+               website template from OS Templates .This template is distributed
                using a Website Template License .
                For more free PSD templates visit OS-Templates.com <p>
                </div>
 
-             
+
             </body>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <script>
 function validateEmail(email) {
 	    var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
@@ -101,6 +105,24 @@ $("#contactForm").submit(function(){
   		  console.error(error);
 		}
   	});
+    if(localStorage) {
+    	$(document).ready(function() {
+    		$(".save").click(function() {
+    			// Get input name
+    			var firstName = $("#firstName").val();
+
+    			// Store data
+        		localStorage.setItem("first_name", firstName);
+    			alert("Your first name is saved.");
+    		});
+    		$(".access").click(function() {
+    			// Retrieve data
+        		alert("Hi, " + localStorage.getItem("first_name"));
+    		});
+    	});
+    } else {
+        alert("Sorry, your browser do not support local storage.");
+    }
 
 $("textarea[name='message']").keydown(function(e){
   		if(e.keyCode == 8)
@@ -136,11 +158,11 @@ $("textarea[name='message']").keydown(function(e){
   		contactObject.push(obj);
   	}
   	var ul = '<ul>';
-    for(var i = 0; i<contactObject.length; i++) 
-    {            
-    	ul = ul + '<li><b>'+contactObject[i].name+'</b> <i>'+contactObject[i].email+'</i></li>';         
+    for(var i = 0; i<contactObject.length; i++)
+    {
+    	ul = ul + '<li><b>'+contactObject[i].name+'</b> <i>'+contactObject[i].email+'</i></li>';
     }
-    ul = ul + '</ul>';     
+    ul = ul + '</ul>';
     $("#contact-list").html(ul);
   </script>
 </html>
