@@ -45,9 +45,8 @@ a.active{
 }
 a:hover{
 	color: #FCFFFF;
-	border-top:solid 3px #B86366;
-	padding-top: 2em;
-
+	border-top:solid 4px #B86366;
+	padding-top: 2.8em;
 }
 
 .smarti_free{
