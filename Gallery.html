@@ -874,7 +874,7 @@ margin-left: 25em;
 	}
 </style>
   </head>
-  <body>
+  <body onload="startGame()">
 
     <section class="smarti_free">
 
@@ -1184,6 +1184,113 @@ var personi = new Person("John", "Doe", 50, "adg@frrr.fd");
 document.getElementById("demo").innerHTML =
 "Numri i fotove te bera nga "+ personi.firstName+" eshte: " + personi.foto + ".";
 </script>
+
+<!-- Loja -->
+ <div style="width:100%; text-align:center;" >
+        <canvas id="canvas" width="400" height="340"
+                style="display:inline;
+                 background:-webkit-linear-gradient( #1f4353,#ffffff);
+                border:1px solid  #454545;
+                float: center;">
+        </canvas>
+    </div>
+
+   
+    <div style="text-align:center;width:100%;text-align: center;clear: both;">
+            <button onclick="moveup()">UP</button><br><br>
+            <button onclick="moveleft()">LEFT</button>
+            <button onclick="moveright()">RIGHT</button><br><br>
+            <button onclick="movedown()">DOWN</button>
+          </div>
+
+     </div>     
+<script>
+        var c = document.getElementById("canvas");
+        var ctx = c.getContext("2d");
+        var canvasWidth=c.getAttribute("width");
+        var canvasHeight=c.getAttribute("height");
+        var katrori;
+        var caku
+        interval;  
+        function startGame(){
+            clear();
+            interval=setInterval(update, 20);// funkioni update ekzekutohet cdo 20 milisekonda
+            katrori = new component(20,20,"red",5,5);
+            caku=new component(33,33,"green",360,217);
+        }
+        function component(gjeresia,gjatesia,ngjyra,x,y){
+            this.gjeresia=gjeresia;
+            this.gjatesia=gjatesia;
+            this.speedX=0;
+            this.speedY=0;
+            this.x=x;
+            this.y=y;
+            ctx.fillStyle=ngjyra;
+            ctx.fillRect(this.x,this.y,this.gjeresia,this.gjatesia);
+            this.update=function(){
+                ctx.fillStyle=ngjyra;
+                ctx.fillRect(this.x,this.y,this.gjeresia,this.gjatesia);
+            }
+            this.pozitaRe=function(){
+                this.x+=this.speedX;
+                this.y+=this.speedY;
+            }
+            this.crashWith=function(obj2){
+                //objekti pare
+                var obj1Left=this.x;
+                var obj1Right=this.x+(this.gjeresia);
+                var obj1Top=this.y;
+                var obj1Bottom=this.y+(this.gjatesia);
+                //objekti dyte
+                var obj2Left=obj2.x;
+                var obj2Right=obj2.x+(obj2.gjeresia);
+                var obj2Top=obj2.y;
+                var obj2Bottom=obj2.y+(obj2.gjatesia);
+                var crash=true;
+                if ((obj1Bottom < obj2Top) || (obj1Top > obj2Bottom) || 
+                    (obj1Right < obj2Left) || (obj1Left > obj2Right)) {
+            crash = false;
+        }
+        return crash;
+            }
+        }
+         function update() {
+             if(katrori.crashWith(caku)){
+                 stop();
+                 if(confirm("Arritet te caku! Deshironi te luani perseri?")){
+                     startGame();
+                 }
+                 //alert("Arritet te caku!")
+                //  ctx.font="30px Arial";
+                //  ctx.fillText("Arritet te caku",300,240);
+             }
+         clear();
+         caku.update();
+         katrori.pozitaRe();
+         katrori.update();
+            }
+         function clear(){
+             ctx.clearRect(0,0,canvasWidth,canvasHeight);
+         }
+         function stop(){
+             clearInterval(interval);
+         }
+ function moveup() {
+    katrori.speedY -= 1; 
+}
+
+function movedown() {
+    katrori.speedY += 1; 
+}
+
+function moveleft() {
+    katrori.speedX -= 1; 
+}
+
+function moveright() {
+    katrori.speedX += 1; 
+}  
+     </script>
         <div class="footer-bottom">
 
 
