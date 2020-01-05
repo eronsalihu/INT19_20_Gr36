@@ -5,30 +5,30 @@
     <title>Gallery/Smart_App</title>
     <link rel="stylesheet" type="text/css" href="reset.css">
   <link rel="stylesheet" type="text/css" href="projekti.css">
-
+  
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 <script src="jquery-1.11.2.min.js"></script>
-<script>
+<script> 
 $(document).ready(function(){
   $(".photo").hover(function(){
     $(".teksti").slideToggle("slow");
-
-
+	
+	
   });
 });
 </script>
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 <script src="jquery-1.11.2.min.js"></script>
-<script>
+<script> 
 $(document).ready(function(){
   $(".photo1").hover(function(){
     $(".teksti").slideToggle("slow");
-
-
+	
+	
   });
 });
 </script>
-
+ 
 <script type="text/javascript">
 	function buttonclick()
 	{
@@ -39,7 +39,7 @@ $(document).ready(function(){
 	body
 	{
 		background-color: #1F2531
-
+		
 	}
 	h1
 	{
@@ -51,16 +51,8 @@ $(document).ready(function(){
 		margin-top: 50px;
 		margin-right: 100px;
 	}
-	/* pjesa e 6 fotove poshte dhe larte */
-#demo{
-  font-size: 1.4em;
-float: inherit;
-  font-family: sans-serif;
-margin-top: 1.3em;
-text-shadow: 2px 3px 3px #1C6EA4;
-margin-left: 25em;
-
-}
+	/* pjesa e 6 fotove me slider - poshte dhe larte */
+	
 	.foto1
 	{
 		width:13%;
@@ -72,7 +64,7 @@ margin-left: 25em;
 		background-image:url('images/otherimages/4.jpg');
 		background-size: 100% 100%;
 		box-shadow: 1px 2px 10px 10px black;
-		animation:slider 9s infinite linear;
+		animation:slider2 9s infinite linear; 
 	}
 
 	.foto2
@@ -86,7 +78,7 @@ margin-left: 25em;
 		background-image:url('images/otherimages/5.jpg');
 		background-size: 100% 100%;
 		box-shadow: 1px 2px 10px 10px black;
-		animation:slider 9s infinite linear;
+		animation:slider 9s infinite linear; 
 	}
 	.foto3
 	{
@@ -96,11 +88,11 @@ margin-left: 25em;
 		left: 53%;
 		top: 550px;
 		transform:translate(10%,230%);
-
+		
 		background-image:url('images/otherimages/6.jpg');
 		background-size: 100% 100%;
 		box-shadow: 1px 2px 10px 10px black;
-		animation:slider 9s infinite linear;
+		animation:slider 9s infinite linear; 
 	}
 	.foto4
 	{
@@ -113,7 +105,7 @@ margin-left: 25em;
 		background-image:url('images/otherimages/7.jpg');
 		background-size: 100% 100%;
 		box-shadow: 1px 2px 10px 10px black;
-		animation:slider 9s infinite linear;
+		animation:slider2 9s infinite linear; 
 
 	}
 	.foto5
@@ -127,10 +119,10 @@ margin-left: 25em;
 		background-image:url('images/otherimages/4.jpg');
 		background-size: 100% 100%;
 		box-shadow: 1px 2px 10px 10px black;
-		animation:slider 9s infinite linear;
+		animation:slider1 9s infinite linear; 
 
 	}
-
+	
 	.foto6
 	{
 		width:13%;
@@ -142,11 +134,11 @@ margin-left: 25em;
 		background-image:url('images/otherimages/7.jpg');
 		background-size: 100% 100%;
 		box-shadow: 1px 2px 10px 10px black;
-		animation:slider 9s infinite linear;
+		animation:slider1 9s infinite linear; 
 
 	}
 	/* pjesa e 6 fotove poshte dhe larte eshte deri ketu */
-
+	
 	/* pjesa e fotove rrotulluese */
 		.fotorrotulluese{
 
@@ -182,7 +174,7 @@ margin-left: 25em;
 		{
 			animation-play-state: paused;
 			cursor: pointer;
-
+			
 
 		}
 		.permbajtja-1 figure
@@ -194,7 +186,7 @@ margin-left: 25em;
 			position:absolute;
 
 		}
-
+		
 		.permbajtja-1 figure:nth-child(1)
 		{
 			transform:rotateY(0deg) translateZ(300px);
@@ -284,7 +276,7 @@ margin-left: 25em;
 		{
 			transform:translateY(-152px);
 		}
-
+		
 		div.photo:hover img:nth-child(5)
 		{
 			transform:translateY(150px);
@@ -301,7 +293,7 @@ margin-left: 25em;
 		{
 			transform:translateY(-80px);
 		}
-
+		/* css i fotos se pare djathtas mbaron ketu */
 		/* css i fotos se dyte majtas */
 			.photo1, .photo1 img
 		{
@@ -333,7 +325,7 @@ margin-left: 25em;
 		{
 			transform:translateY(-152px);
 		}
-
+		
 		div.photo1:hover img:nth-child(5)
 		{
 			transform:translateY(150px);
@@ -350,9 +342,10 @@ margin-left: 25em;
 		{
 			transform:translateY(-80px);
 		}
-
-		/* pjesa e 2 fotove anash  */
-
+		/* css i fotos se dyte majtas mbaron ketu */
+		
+		/* pjesa e 2 fotove majtas dhe djathtas  */
+		
 		.photo1:hover img:nth-child(5):active
 		{
 			width: 230px;
@@ -418,7 +411,7 @@ margin-left: 25em;
 			margin-left: 400px;
 
 		}
-
+	
 		.photo:hover img:nth-child(5):active
 		{
 			width: 230px;
@@ -482,11 +475,12 @@ margin-left: 25em;
 			left: 210px;
 			margin-left: 400px;
 		}
+		/* pjesa e 2 fotove majtas dhe djathtas mbaron ketu */
 		/* pjesa e footerit poshte*/
 		.footer-bottom
 		{
-			margin-top:350px;
-			margin-bottom: 10px;
+			margin-top:100px;
+			margin-bottom: 25px;
 			color: white;
 		}
 		/* pjesa e shkrimit me drite*/
@@ -497,7 +491,7 @@ margin-left: 25em;
       box-sizing: border-box;
 
     }
-
+   
     h2
     {
       font-size: 2em;
@@ -529,7 +523,7 @@ margin-left: 25em;
     {
       animation-delay: 0.8s;
          padding-left: 20px;
-
+      
     }
     h2 span:nth-child(5)
     {
@@ -580,12 +574,12 @@ margin-left: 25em;
      h2 span:nth-child(16)
     {
       animation-delay: 3.2s;
-
+     
     }
      h2 span:nth-child(17)
     {
       animation-delay: 3.4s;
-
+     
     }
      h2 span:nth-child(18)
     {
@@ -611,23 +605,23 @@ margin-left: 25em;
      h2 span:nth-child(23)
     {
       animation-delay: 4.6s;
-
+      
     }
     h2 span:nth-child(24)
     {
       animation-delay: 4.8s;
-
+      
     }
     h2 span:nth-child(25)
     {
       animation-delay: 5s;
-
+      
     }
       h2 span:nth-child(26)
     {
       animation-delay: 5.2s;
        padding-left: 40px;
-
+      
     }
       h2 span:nth-child(27)
     {
@@ -637,39 +631,39 @@ margin-left: 25em;
       h2 span:nth-child(28)
     {
       animation-delay: 5.6s;
-
+      
     }
       h2 span:nth-child(29)
     {
       animation-delay: 5.8s;
-
+      
     }
       h2 span:nth-child(30)
     {
       animation-delay: 6s;
-
+      
     }
       h2 span:nth-child(31)
     {
       animation-delay: 6.2s;
-
+     
     }
       h2 span:nth-child(32)
     {
       animation-delay: 6.4s;
-
-
+       
+      
     }
       h2 span:nth-child(33)
     {
       animation-delay: 6.6s;
        padding-left: 40px;
-
+     
     }
       h2 span:nth-child(34)
     {
       animation-delay: 6.8s;
-
+      
     }
       h2 span:nth-child(35)
     {
@@ -679,41 +673,44 @@ margin-left: 25em;
       h2 span:nth-child(36)
     {
       animation-delay: 7.2s;
-
+      
     }
      h2 span:nth-child(37)
     {
       animation-delay: 7.4s;
-
+      
     }
      h2 span:nth-child(38)
     {
       animation-delay: 7.6s;
-
+      
     }
      h2 span:nth-child(39)
     {
       animation-delay: 7.8s;
-
+      
     }
      h2 span:nth-child(40)
     {
       animation-delay: 8s;
        padding-left: 20px;
-
+      
     }
      h2 span:nth-child(41)
     {
       animation-delay: 8.2s;
-
+      
     }
      h2 span:nth-child(42)
     {
       animation-delay: 8.4s;
-
+      
     }
-
-    div.tedhenat
+    /* pjesa e shkrimit me drite mbaron ketu*/
+   
+   
+  	/* pjesa e fakteve me orange color*/
+    div.tedhenat   
     {
 
    	 width: 380px;
@@ -751,6 +748,9 @@ margin-left: 25em;
     	font-size: 25px;
     	margin-bottom: 30px;
     }
+    /* pjesa e fakteve me orange color*/
+
+    /* pjesa e fundit e 2 tabelave per regjister dhe vleresim*/
     div.butonat
     {
     	height: 180px;
@@ -766,11 +766,14 @@ margin-left: 25em;
     }
     h3.butoni1
     {
-    	padding-top: 40px;
+    	font-size: 18px;
+    	padding-top: 30px;
     	color: black;
-    	padding-bottom: 20px;
+    	padding-bottom: 10px;
+    	padding-left: 30px;
+    	padding-right: 30px;
 
-
+    	
     }
     input.button
     {
@@ -832,7 +835,63 @@ margin-left: 25em;
     	transition: 2s;
     }
 
+    
 
+    div.rating
+    {	
+    	width: 400px;
+    	padding-top: 40px;
+    	padding-left: 105px;
+    }
+    div.rating1
+    {
+    	position:relative;
+    	display: flex;
+    	flex-direction: row-reverse;
+    	margin-top: 10px;
+    	border:1px solid #000;
+    	box-sizing: border-box;
+    	background: linear-gradient(to right,#f00,#ff0,#0f0);
+    }
+    div.rating1 input
+    {
+    	display: none;
+    }
+    div.rating1 label
+    {
+    	display: block;
+    	cursor: pointer;
+    	width: 50px;
+    	height: 40px;
+    	display: flex;
+    	justify-content: center;
+    	align-items: center;
+    	transition: .5s;
+    	background: #fff;
+    	color: #000;
+    	font-size: 20px;
+    	border-right: 1px solid #000;
+    	border-radius: 10px;
+    }
+    .rating1 input[type="radio"]:hover ~ label,
+    .rating1 input[type="radio"]:checked ~ label
+
+    {
+    	background: transparent;
+
+    }
+
+
+    h3.ratingid
+    {
+    	font-size: 20px;
+    	color: black ;
+    	padding-bottom: 20px;
+    	align-content: center;
+    	
+
+    }
+    /* ketu mbaron pjesa e tabelave me buttona*/
 
      @keyframes animate
     {
@@ -842,7 +901,7 @@ margin-left: 25em;
         color: #fff;
         text-shadow: none;
 
-      }
+      } 
       100%
       {
         color: #fff;
@@ -852,7 +911,7 @@ margin-left: 25em;
                     0 0 80px #fff,
                     0 0 120px #fff,
                     0 0 160px #fff;
-
+       
       }
     }
 		/* pjesa e fotove rrotulluese */
@@ -868,13 +927,31 @@ margin-left: 25em;
 	@keyframes slider
 	{
 		0% { background-image: url('images/otherimages/1.jpg');}
-		35% { background-image: url('images/otherimages/2.jpg');  }
+		35% { background-image: url('images/otherimages/8.jpg');  }
 		75% {background-image: url('images/otherimages/3.jpg'); }
+
+	}
+	@keyframes slider1
+	{
+		0% { background-image: url('images/otherimages/4.jpg');}
+		35% { background-image: url('images/otherimages/5.jpg');  }
+		75% {background-image: url('images/otherimages/6.jpg'); }
+
+	}
+	@keyframes slider2
+	{
+		0% { background-image: url('images/otherimages/4.jpg');}
+		35% { background-image: url('images/otherimages/5.jpg');  }
+		75% {background-image: url('images/otherimages/6.jpg'); }
 
 	}
 </style>
   </head>
+
   <body onload="startGame()">
+
+  <body>
+  	
 
     <section class="smarti_free">
 
@@ -891,8 +968,8 @@ margin-left: 25em;
                <ul class="lista">
                  <li><a href="index.html"   >Home</a></li>|
                  <li><a href="style_demo.html">Style Demo</a></li>|
-                 <li><a href="Contact.html">Contact</a></li>|
-                 <li class="dropdown"><a href="Drop_Down.html" class="dropdbtn" >Dropdown</a>
+                 <li><a href="Contact.html">Full Width</a></li>|
+                 <li class="dropdown"><a class="dropdbtn" >Dropdown</a>
            	<div class="dropdown-content">
            		<a id="dropdowmia" href="https://www.smartthings.com/" target="_blank"> Smart Things</a>
            		<a id="dropdowmai" href="https://smartapp.io/" target="_blank">Smart App</a>
@@ -910,43 +987,43 @@ margin-left: 25em;
         <table class="pos">
 		<tr>
 			<td>
-
+				
 			<div class="foto1">
-
+		
 
 			</div>
 			</td>
 			<td>
-
+				
 			<div class="foto2">
-
+		
 
 			</div>
 			</td>
 			<td>
-
+				
 			<div class="foto3">
-
+		
 
 			</div>
 			</td>
 			<td>
 
 			<div class="foto4">
-
+		
 
 			</div>
 			</td>
 			<td>
 
 			<div class="foto5">
-
+		
 
 			</div>
 			</td>
 			<td colspan="2">
 
-
+			
 				 <h2>
 	 	<div class="teksti">
 	   <span>.</span>
@@ -995,15 +1072,15 @@ margin-left: 25em;
 
 	</div>
 			</td>
-
+			
 			<td>
 
 			<div class="foto6">
-
+		
 
 			</div>
 			</td>
-
+			
 		</tr>
 	</table>
 	<section class="fotorrotulluese">
@@ -1042,14 +1119,15 @@ margin-left: 25em;
                 <figure class="shadow">
                     <a href="images/imagesofnature/7large.jpg">
                         <img src="images/imagesofnature/7.jpg">
-                    </a>
 
+                    </a>
+                    
                 </figure>
                 <figure class="shadow">
                     <a href="images/imagesofnature/8large.jpg">
                         <img src="images/imagesofnature/8.jpg">
                     </a>
-
+                    
                 </figure>
                 <figure class="shadow">
                     <a href="images/imagesofnature/9large.jpg">
@@ -1058,12 +1136,12 @@ margin-left: 25em;
 
 
 
-
+                    
 			</div>
-
+			
 		</div>
 
-
+		
 		<div class="photo">
 			<img src="images/imagesofupdown/1.jpg">
 			<img src="images/imagesofupdown/2.jpg">
@@ -1074,7 +1152,7 @@ margin-left: 25em;
 			<img src="images/imagesofupdown/7.jpg">
 			<img src="images/imagesofupdown/8.jpg">
 			<img src="images/imagesofupdown/9.jpg">
-
+			
 		</div>
 		<div class="photo1">
 			<img src="images/imagesofupdown/11.jpg">
@@ -1086,23 +1164,21 @@ margin-left: 25em;
 			<img src="images/imagesofupdown/17.jpg">
 			<img src="images/imagesofupdown/18.jpg">
 			<img src="images/imagesofupdown/19.jpg">
-
+			
 		</div>
-
+		
 	</section>
 		<div class="footer">
 		<table class="tabelanefund">
-
+			
 			<tr>
 				<td>
 					<div class="tedhenat">
 
 						<h3 class="firsttitle">First Snapshot</h3>
-<audio src="Steve.mp3" width="320px" height="180px" align="center" class="firstphoto" controls autoplay style="border:none">
-  Audio nuk mund te shfaqet
-</audio>
-			<!--		<img src="images/otherimages/oldimage.jpg" width="320px" height="180px" align="center" class="firstphoto"> -->
 
+					<img src="images/otherimages/oldimage.jpg" width="320px" height="180px" align="center" class="firstphoto">
+					 
 					 <p class="firstperson">The first person who managed to
 make a “photographic” snapshot constant, that is to fix the image was
 Joseph Niepce. The very first snapshot in the history of photography is
@@ -1114,31 +1190,24 @@ shot lasted 8 Hours. That’s the picture above.
 				<td>
 					<div class="tedhenat">
 						<h3 class="firsttitle">First Photo Taken</h3>
-<video src="vidi.mp4" width="320px" height="180px" align="center" class="firstphoto" controls autoplay style="border:none">
 
-</video>
-				<!--	<img src="images/otherimages/oldimage1.jpg" width="320px" height="180px" align="center" class="firstphoto"> -->
-
-					 <p class="firstperson">He is the first person to ever have his photograph taken and it was an accident.
-              It is believed he was getting his shoes cleaned, which is why he stayed still long enough for his photograph to be taken
-              .He is the first person to ever have his photograph taken and it was an accident.
-               It is believed he was getting his shoes cleaned, which is why he stayed still long enough for his photograph to be taken.
+					<img src="images/otherimages/oldimage1.jpg" width="320px" height="180px" align="center" class="firstphoto">
+					 
+					 <p class="firstperson">He is the first person to ever have his photograph taken and it was an accident. It is believed he was getting his shoes cleaned, which is why he stayed still long enough for his photograph to be taken.He is the first person to ever have his photograph taken and it was an accident. It is believed he was getting his shoes cleaned, which is why he stayed still long enough for his photograph to be taken.
 </p>
 					</div>
-
+			
 				</td>
 				<td>
 					<div class="tedhenat">
 						<h3 class="firsttitle"> Mini-Explosions
 </h3>
-<audio src="ppt.mp3" width="320px" height="180px" align="center" class="firstphoto" controls autoplay style="border:none">
-  Audio nuk mund te shfaqet
-</audio>
-				<!--	<img src="images/otherimages/oldimage2.jpg" width="320px" height="180px" align="center" class="firstphoto"> -->
 
+					<img src="images/otherimages/oldimage2.jpg" width="320px" height="180px" align="center" class="firstphoto">
+					 
 					 <p class="firstperson">
 					 The First Flashes Were Mini-Explosions .<br>
-					 This is a modern-day presentation of the original mix of potassium chloride and aluminum that created the first flashes.<br>
+					 This is a modern-day presentation of the original mix of potassium chloride and aluminum that created the first flashes.<br> 
 					Unfortunately, when you mix potassium chloride and aluminum incorrectly, you get a huge explosion.</p>
 					</div>
 				</td>
@@ -1146,11 +1215,6 @@ shot lasted 8 Hours. That’s the picture above.
 		</table>
 	<table>
 		<tr>
-			<td >
-				<div class="butonat">
-				Vlereso
-			</div>
-
 			<td >
 
 
@@ -1161,11 +1225,42 @@ shot lasted 8 Hours. That’s the picture above.
 				<input class="button" type="button" value="Register" onclick="buttonclick()">
 			</div>
 			</td>
-
-
-
+			<td >
+				<div class="butonat">
+				<div class="rating">
+					<h3 class="ratingid" align="center">
+						Rate our Gallery
+					</h3>
+				<div class="rating1">
+					<input type="radio" name="rating" id="rate10" onclick="alert('Thank you')">
+					<label for="rate10">10</label>
+					<input type="radio" name="rating" id="rate9" onclick="alert('Thank you')">
+					<label for="rate9">9</label>
+					<input type="radio" name="rating" id="rate8" onclick="alert('Thank you')">
+					<label for="rate8">8</label>
+					<input type="radio" name="rating" id="rate7" onclick="alert('Thank you')">
+					<label for="rate7">7</label>
+					<input type="radio" name="rating" id="rate6" onclick="alert('Thank you , we will try better next time .')">
+					<label for="rate6">6</label>
+					<input type="radio" name="rating" id="rate5" onclick="alert('Thank you .')">
+					<label for="rate5">5</label>
+					<input type="radio" name="rating" id="rate4" onclick="alert('Thank you , we will try better next time .')">
+					<label for="rate4">4</label>
+					<input type="radio" name="rating" id="rate3" onclick="alert('Thank you , we will try better next time .')">
+					<label for="rate3">3</label>
+					<input type="radio" name="rating" id="rate2" onclick="alert('Thank you , we will try better next time .')">
+					<label for="rate2">2</label>
+					<input type="radio" name="rating" id="rate1" onclick="alert('Thank you , we will try better next time .')">
+					<label for="rate1">1</label>
+				</div>
+			</div>
+			</div>
+			
+			
+			
 		</tr>
 	</table>
+
   <p id="demo"></p>
 
 <script>
@@ -1291,14 +1386,15 @@ function moveright() {
     katrori.speedX += 1; 
 }  
      </script>
+
         <div class="footer-bottom">
-
-
-
+         
+           
+          
           <span style="float:left">Copyright © 2019</span>
 		<span style="float:right"> By:Computer Engineering Students </span>
-
+        
         </div>
-
+  		  
 	    </body>
 </html>
