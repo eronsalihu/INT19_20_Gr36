@@ -52,7 +52,15 @@ $(document).ready(function(){
 		margin-right: 100px;
 	}
 	/* pjesa e 6 fotove poshte dhe larte */
+#demo{
+  font-size: 1.4em;
+float: inherit;
+  font-family: sans-serif;
+margin-top: 1.3em;
+text-shadow: 2px 3px 3px #1C6EA4;
+margin-left: 25em;
 
+}
 	.foto1
 	{
 		width:13%;
@@ -1158,6 +1166,24 @@ shot lasted 8 Hours. That’s the picture above.
 
 		</tr>
 	</table>
+  <p id="demo"></p>
+
+<script>
+// Constructor function for Person objects
+function Person(first, last, foto,email) {
+  this.firstName = first;
+  this.lastName = last;
+  this.foto = foto;
+  this.emails = email;
+}
+
+// Create a Person object
+var personi = new Person("John", "Doe", 50, "adg@frrr.fd");
+
+// Display age
+document.getElementById("demo").innerHTML =
+"Numri i fotove te bera nga "+ personi.firstName+" eshte: " + personi.foto + ".";
+</script>
         <div class="footer-bottom">
 
 
